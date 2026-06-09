@@ -1,0 +1,341 @@
+/* ── NAV STYLES – shared across all pages ── */
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  background: rgba(255,255,255,0.96);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+  height: 66px;
+  display: flex;
+  align-items: center;
+  padding: 0 5%;
+  gap: 32px;
+}
+
+.nav-logo {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  line-height: 1.15;
+  flex-shrink: 0;
+}
+
+.nav-logo-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 26px;
+  letter-spacing: -0.3px;
+  line-height: 1;
+}
+
+.nav-logo-text .prefix {
+  font-weight: 400;
+  font-style: italic;
+  color: var(--text-muted);
+}
+
+.nav-logo-text .country {
+  font-weight: 600;
+  font-style: normal;
+  color: var(--emerald);
+}
+
+/* ── DESKTOP NAV LINKS ── */
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2px;
+  margin-left: auto;
+  align-items: center;
+}
+
+.nav-links > li {
+  position: relative;
+}
+
+.nav-links > li > a {
+  text-decoration: none;
+  font-size: 13.5px;
+  font-weight: 400;
+  color: var(--text-mid);
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background 0.18s, color 0.18s;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+.nav-links > li > a:hover {
+  background: var(--emerald-light);
+  color: var(--emerald);
+}
+
+/* dropdown arrow */
+.nav-links > li.has-dropdown > a::after {
+  content: '';
+  display: inline-block;
+  width: 6px; height: 6px;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: rotate(45deg) translateY(-2px);
+  transition: transform 0.18s;
+}
+
+.nav-links > li.has-dropdown:hover > a::after {
+  transform: rotate(225deg) translateY(-2px);
+}
+
+/* ── DROPDOWN PANELS ── */
+
+.nav-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: 0 8px 28px rgba(0,0,0,0.10);
+  min-width: 200px;
+  padding: 14px 0 8px;
+  z-index: 300;
+}
+
+/* invisible bridge so hover isn't lost moving mouse into dropdown */
+.nav-dropdown::before {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: 0;
+  right: 0;
+  height: 12px;
+}
+
+.nav-links > li.has-dropdown:hover .nav-dropdown {
+  display: block;
+}
+
+.nav-dropdown a {
+  display: block;
+  text-decoration: none;
+  font-size: 13.5px;
+  color: var(--text-mid);
+  padding: 8px 18px;
+  transition: background 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+
+.nav-dropdown a:hover {
+  background: var(--emerald-light);
+  color: var(--emerald);
+}
+
+.nav-dropdown .dropdown-divider {
+  height: 1px;
+  background: var(--border);
+  margin: 6px 12px;
+}
+
+/* ── FROM YOUR CITY – wide panel ── */
+
+.city-dropdown-parent {
+  position: static;
+}
+
+.nav-dropdown-wide {
+  position: fixed;
+  top: 66px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  min-width: unset;
+  border-radius: 0 0 10px 10px;
+}
+
+.dropdown-columns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+}
+
+.dropdown-col {
+  padding: 8px 0;
+  border-right: 1px solid var(--border);
+}
+
+.dropdown-col:last-child {
+  border-right: none;
+}
+
+.dropdown-country {
+  font-size: 10.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--emerald);
+  padding: 10px 18px 4px;
+  margin-top: 4px;
+}
+
+.dropdown-col:first-child .dropdown-country:first-child {
+  margin-top: 0;
+}
+
+/* ── CTA BUTTON ── */
+
+.nav-cta {
+  background: var(--emerald) !important;
+  color: var(--white) !important;
+  font-weight: 500 !important;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 13.5px;
+  padding: 6px 14px;
+  white-space: nowrap;
+  transition: background 0.18s;
+  margin-left: 6px;
+}
+
+.nav-cta:hover {
+  background: var(--emerald-mid) !important;
+  color: var(--white) !important;
+}
+
+/* ── HAMBURGER ── */
+
+.nav-hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px; height: 18px;
+  cursor: pointer;
+  margin-left: auto;
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.nav-hamburger span {
+  display: block;
+  height: 2px;
+  background: var(--emerald);
+  border-radius: 2px;
+  transition: all 0.25s ease;
+}
+
+.nav-hamburger.open span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+.nav-hamburger.open span:nth-child(2) { opacity: 0; }
+.nav-hamburger.open span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+@media (max-width: 1024px) {
+  .nav-links { display: none; }
+  .nav-cta { display: none; }
+  .nav-hamburger { display: flex; }
+}
+
+/* ── MOBILE MENU ── */
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 66px; left: 0; right: 0; bottom: 0;
+  background: rgba(255,255,255,0.98);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+  z-index: 199;
+  flex-direction: column;
+  overflow-y: auto;
+  padding: 8px 0 24px;
+}
+
+.mobile-menu.open { display: flex; }
+
+.mob-group { border-bottom: 1px solid var(--border); }
+
+.mob-group-header {
+  width: 100%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-dark);
+  padding: 14px 20px;
+  text-align: left;
+}
+
+.mob-arrow {
+  display: inline-block;
+  width: 8px; height: 8px;
+  border-right: 2px solid var(--emerald);
+  border-bottom: 2px solid var(--emerald);
+  transform: rotate(45deg);
+  transition: transform 0.2s;
+  flex-shrink: 0;
+}
+
+.mob-group-header[aria-expanded="true"] .mob-arrow {
+  transform: rotate(225deg);
+}
+
+.mob-group-body {
+  display: none;
+  flex-direction: column;
+  background: var(--emerald-pale);
+  padding: 4px 0 8px;
+}
+
+.mob-group-body.open { display: flex; }
+
+.mob-group-body a {
+  text-decoration: none;
+  font-size: 14px;
+  color: var(--text-mid);
+  padding: 9px 28px;
+  transition: color 0.15s;
+}
+
+.mob-group-body a:hover { color: var(--emerald); }
+
+.mob-country {
+  font-size: 10.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--emerald);
+  padding: 10px 28px 2px;
+}
+
+.mob-flat-link {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-dark);
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border);
+  display: block;
+}
+
+.mobile-cta {
+  background: var(--emerald);
+  color: var(--white) !important;
+  text-align: center;
+  font-weight: 500;
+  margin: 16px 20px 0;
+  border-radius: 8px;
+  padding: 13px 20px;
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+}
+
+.mobile-cta:hover { opacity: 0.88; }

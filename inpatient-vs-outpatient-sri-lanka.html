@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inpatient vs Outpatient Rehab | Rehab Sri Lanka</title>
+  <meta name="description" content="Understanding the difference between inpatient residential rehab and outpatient treatment. Who each suits and why international clients almost always need residential care." />
+  <link rel="canonical" href="https://rehabsrilanka.com/inpatient-vs-outpatient-sri-lanka.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="stylesheet" href="nav.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --emerald: #1b5e42; --emerald-dark: #0e3828; --emerald-mid: #2a7a58;
+      --emerald-light: #e6f2ec; --gold: #b8881e; --gold-light: #faf0db;
+      --text-dark: #131a17; --text-mid: #374840; --text-muted: #617a6e;
+      --border: rgba(27,94,66,0.12); --white: #ffffff; --off-white: #f8faf9;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Outfit', sans-serif; color: var(--text-dark); background: var(--white); font-size: 16px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    .a1 { animation: fadeUp 0.6s ease both; }
+    .a2 { animation: fadeUp 0.6s 0.1s ease both; }
+    .a3 { animation: fadeUp 0.6s 0.2s ease both; }
+
+  /* dropdown arrow */
+
+  /* dropdown panel */
+
+  /* wide multi-column dropdown for From Your City */
+    .page-hero { background: var(--emerald-dark); padding: 80px 5% 64px; }
+    .page-hero .inner { max-width: 1160px; margin: 0 auto; }
+    .page-hero .label { font-size: 10.5px; font-weight: 500; letter-spacing: 2.8px; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-bottom: 14px; }
+    .page-hero h1 { font-family: 'Cormorant Garamond', serif; font-size: 52px; font-weight: 500; color: var(--white); line-height: 1.12; letter-spacing: -0.4px; margin-bottom: 18px; max-width: 720px; }
+    .page-hero h1 em { font-style: italic; color: rgba(255,255,255,0.55); }
+    .page-hero p { font-size: 17px; font-weight: 300; color: rgba(255,255,255,0.65); line-height: 1.8; max-width: 600px; }
+    section { padding: 72px 5%; }
+    section.alt { background: var(--off-white); }
+    .inner { max-width: 1160px; margin: 0 auto; }
+    .label { font-size: 10.5px; font-weight: 500; letter-spacing: 2.8px; text-transform: uppercase; color: var(--emerald-mid); margin-bottom: 10px; }
+    .sec-title { font-family: 'Cormorant Garamond', serif; font-size: 36px; font-weight: 500; color: var(--text-dark); line-height: 1.18; letter-spacing: -0.3px; margin-bottom: 16px; }
+    .content-grid { display: grid; grid-template-columns: 1fr 360px; gap: 64px; align-items: start; }
+    .content-body p { font-size: 15.5px; font-weight: 300; color: var(--text-muted); line-height: 1.85; margin-bottom: 18px; }
+    .content-body h3 { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 500; color: var(--text-dark); margin: 32px 0 12px; }
+    .content-body ul { margin: 0 0 18px 20px; }
+    .content-body ul li { font-size: 15px; font-weight: 300; color: var(--text-muted); line-height: 1.8; margin-bottom: 6px; }
+    .info-card { background: var(--emerald-dark); border-radius: 16px; padding: 30px 26px; color: var(--white); position: sticky; top: 86px; }
+    .info-card h4 { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 500; color: var(--white); margin-bottom: 18px; }
+    .info-row { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.08); font-size: 13.5px; }
+    .info-row:last-of-type { border-bottom: none; }
+    .info-row span:first-child { color: rgba(255,255,255,0.5); font-weight: 300; }
+    .info-row span:last-child { color: var(--white); font-weight: 500; text-align: right; max-width: 55%; }
+    .info-divider { border: none; border-top: 1px solid rgba(255,255,255,0.08); margin: 16px 0; }
+    .cards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .card { background: var(--white); border: 1px solid var(--border); border-radius: 14px; padding: 26px 22px; border-top: 3px solid var(--emerald-light); transition: border-top-color 0.2s, box-shadow 0.2s; }
+    .card:hover { border-top-color: var(--emerald); box-shadow: 0 4px 20px rgba(27,94,66,0.07); }
+    .card h4 { font-size: 15px; font-weight: 500; color: var(--text-dark); margin-bottom: 8px; }
+    .card p { font-size: 13.5px; font-weight: 300; color: var(--text-muted); line-height: 1.7; }
+    .faq-list { max-width: 780px; }
+    .faq-item { border-bottom: 1px solid var(--border); padding: 20px 0; cursor: pointer; }
+    .faq-item:first-child { border-top: 1px solid var(--border); }
+    .faq-q { font-size: 15px; font-weight: 500; color: var(--text-dark); display: flex; justify-content: space-between; align-items: center; gap: 16px; user-select: none; }
+    .faq-q::after { content: '+'; font-size: 20px; font-weight: 300; color: var(--emerald); flex-shrink: 0; transition: transform 0.2s; }
+    .faq-item.open .faq-q::after { transform: rotate(45deg); }
+    .faq-a { display: none; font-size: 14px; font-weight: 300; color: var(--text-muted); line-height: 1.75; padding-top: 12px; max-width: 680px; }
+    .faq-item.open .faq-a { display: block; }
+    .cta-band { background: linear-gradient(140deg, var(--emerald-dark) 0%, var(--emerald) 100%); padding: 72px 5%; text-align: center; }
+    .cta-band h2 { font-family: 'Cormorant Garamond', serif; font-size: 40px; font-weight: 500; color: var(--white); margin-bottom: 12px; }
+    .cta-band p { font-size: 16px; font-weight: 300; color: rgba(255,255,255,0.65); margin-bottom: 36px; line-height: 1.75; }
+    .cta-form-card { background: var(--white); border-radius: 18px; padding: 40px; max-width: 540px; margin: 0 auto; text-align: left; }
+    .cta-form-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 600; color: var(--text-dark); margin-bottom: 20px; }
+    .fg { margin-bottom: 12px; }
+    .fg label { display: block; font-size: 10.5px; font-weight: 500; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 5px; }
+    .fg input, .fg select { width: 100%; padding: 10px 13px; border: 1px solid rgba(27,94,66,0.18); border-radius: 7px; font-size: 14px; font-family: 'Outfit', sans-serif; font-weight: 300; color: var(--text-dark); background: var(--white); outline: none; transition: border-color 0.2s; -webkit-appearance: none; }
+    .fg input:focus, .fg select:focus { border-color: var(--emerald); box-shadow: 0 0 0 3px rgba(27,94,66,0.08); }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 11px; }
+    .form-submit { width: 100%; background: var(--emerald); color: var(--white); padding: 13px; border: none; border-radius: 8px; font-size: 15px; font-weight: 500; font-family: 'Outfit', sans-serif; cursor: pointer; margin-top: 4px; transition: opacity 0.18s; }
+    .form-submit:hover { opacity: 0.88; }
+    .form-note { font-size: 11px; color: var(--text-muted); text-align: center; margin-top: 9px; }
+    .breadcrumb { padding: 12px 5%; background: var(--off-white); border-bottom: 1px solid var(--border); font-size: 12px; color: var(--text-muted); }
+    .breadcrumb a { color: var(--text-muted); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--emerald); }
+    .breadcrumb span { margin: 0 6px; }
+    footer { background: #0c1e16; padding: 56px 5% 32px; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; max-width: 1160px; margin: 0 auto 40px; }
+    .footer-logo-text { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 600; color: var(--white); display: block; margin-bottom: 10px; }
+    .footer-logo-text .prefix { font-weight: 400; font-style: italic; color: rgba(255,255,255,0.4); }
+    .footer-about { font-size: 13px; font-weight: 300; color: rgba(255,255,255,0.42); line-height: 1.8; margin-bottom: 18px; }
+    .footer-contact a { display: block; font-size: 13px; color: rgba(255,255,255,0.42); text-decoration: none; margin-bottom: 4px; }
+    .footer-col h5 { font-size: 10px; font-weight: 500; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,0.28); margin-bottom: 14px; }
+    .footer-col a { display: block; font-size: 13px; font-weight: 300; color: rgba(255,255,255,0.48); text-decoration: none; margin-bottom: 9px; transition: color 0.2s; }
+    .footer-col a:hover { color: rgba(255,255,255,0.9); }
+    .footer-bottom { max-width: 1160px; margin: 0 auto; padding-top: 22px; border-top: 1px solid rgba(255,255,255,0.07); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; font-size: 12px; color: rgba(255,255,255,0.25); }
+    .footer-bottom-links { display: flex; gap: 20px; }
+    .footer-bottom-links a { color: rgba(255,255,255,0.25); text-decoration: none; font-size: 12px; }
+    .footer-bottom-links a:hover { color: rgba(255,255,255,0.7); }
+    @media (max-width: 1000px) { .content-grid { grid-template-columns: 1fr; } .cards-grid { grid-template-columns: 1fr 1fr; } .footer-grid { grid-template-columns: 1fr 1fr; } nav .info-card { position: static; } }
+    @media (max-width: 600px) { .page-hero h1 { font-size: 36px; } .cards-grid { grid-template-columns: 1fr; } .form-row { grid-template-columns: 1fr; } .footer-grid { grid-template-columns: 1fr; gap: 28px; } }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">
+    <span class="nav-logo-text"><span class="prefix">Rehab </span><span class="country">Sri Lanka</span></span>
+  </a>
+  <ul class="nav-links">
+    <li class="has-dropdown">
+      <a href="#">Treatment</a>
+      <div class="nav-dropdown">
+        <a href="alcohol-rehab-sri-lanka.html">Alcohol Rehab</a>
+        <a href="drug-rehab-sri-lanka.html">Drug Rehab</a>
+        <a href="cocaine-addiction-sri-lanka.html">Cocaine Addiction</a>
+        <a href="heroin-addiction-sri-lanka.html">Heroin Addiction</a>
+        <a href="benzodiazepine-addiction-sri-lanka.html">Benzodiazepines</a>
+        <a href="cannabis-addiction-sri-lanka.html">Cannabis Addiction</a>
+        <a href="mdma-addiction-sri-lanka.html">MDMA Addiction</a>
+        <a href="prescription-drug-addiction-sri-lanka.html">Prescription Drugs</a>
+        <a href="gambling-addiction-sri-lanka.html">Gambling Addiction</a>
+        <a href="sex-addiction-sri-lanka.html">Sex Addiction</a>
+        <div class="dropdown-divider"></div>
+        <a href="dual-diagnosis-sri-lanka.html">Dual Diagnosis</a>
+        <a href="depression-treatment-sri-lanka.html">Depression</a>
+        <a href="anxiety-treatment-sri-lanka.html">Anxiety</a>
+        <a href="burnout-retreat-sri-lanka.html">Burnout</a>
+        <a href="trauma-treatment-sri-lanka.html">Trauma</a>
+      </div>
+    </li>
+    <li class="has-dropdown">
+      <a href="#">Information</a>
+      <div class="nav-dropdown">
+        <a href="cost-of-rehab-sri-lanka.html">Cost of Rehab</a>
+        <a href="how-long-is-rehab-sri-lanka.html">How Long is Rehab?</a>
+        <a href="what-to-expect-rehab-sri-lanka.html">What to Expect</a>
+        <a href="rehab-abroad-sri-lanka.html">Rehab Abroad</a>
+        <a href="is-sri-lanka-safe-for-rehab.html">Is Sri Lanka Safe?</a>
+        <a href="inpatient-vs-outpatient-sri-lanka.html">Inpatient vs Outpatient</a>
+        <a href="luxury-rehab-sri-lanka.html">Luxury Rehab</a>
+        <div class="dropdown-divider"></div>
+        <a href="family-support-sri-lanka.html">For Families</a>
+        <a href="how-to-stage-an-intervention.html">How to Stage an Intervention</a>
+        <a href="aftercare-sri-lanka.html">Aftercare</a>
+      </div>
+    </li>
+    <li class="has-dropdown city-dropdown-parent">
+      <a href="#">From Your City</a>
+      <div class="nav-dropdown nav-dropdown-wide">
+        <div class="dropdown-columns">
+          <div class="dropdown-col">
+            <div class="dropdown-country">United Kingdom</div>
+            <a href="rehab-sri-lanka-from-london.html">London</a>
+            <a href="rehab-sri-lanka-from-manchester.html">Manchester</a>
+            <a href="rehab-sri-lanka-from-birmingham.html">Birmingham</a>
+            <a href="rehab-sri-lanka-from-edinburgh.html">Edinburgh</a>
+            <a href="rehab-sri-lanka-from-bristol.html">Bristol</a>
+            <div class="dropdown-country">UAE</div>
+            <a href="#">Dubai</a>
+            <a href="#">Abu Dhabi</a>
+            <div class="dropdown-country">Singapore</div>
+            <a href="#">Singapore</a>
+            <div class="dropdown-country">Hong Kong</div>
+            <a href="#">Hong Kong</a>
+            <div class="dropdown-country">Qatar</div>
+            <a href="#">Doha</a>
+            <div class="dropdown-country">Kuwait</div>
+            <a href="#">Kuwait City</a>
+          </div>
+          <div class="dropdown-col">
+            <div class="dropdown-country">Australia</div>
+            <a href="#">Sydney</a>
+            <a href="#">Melbourne</a>
+            <a href="#">Brisbane</a>
+            <a href="#">Perth</a>
+            <a href="#">Adelaide</a>
+            <div class="dropdown-country">New Zealand</div>
+            <a href="#">Auckland</a>
+            <a href="#">Christchurch</a>
+            <div class="dropdown-country">Malaysia</div>
+            <a href="#">Kuala Lumpur</a>
+            <a href="#">Penang</a>
+            <div class="dropdown-country">Thailand</div>
+            <a href="#">Bangkok</a>
+            <a href="#">Phuket</a>
+            <a href="#">Chiang Mai</a>
+            <div class="dropdown-country">Japan</div>
+            <a href="#">Tokyo</a>
+            <a href="#">Osaka</a>
+            <div class="dropdown-country">South Korea</div>
+            <a href="#">Seoul</a>
+            <a href="#">Busan</a>
+          </div>
+          <div class="dropdown-col">
+            <div class="dropdown-country">USA</div>
+            <a href="#">New York</a>
+            <a href="#">Los Angeles</a>
+            <a href="#">San Francisco</a>
+            <a href="#">Chicago</a>
+            <a href="#">Houston</a>
+            <a href="#">Miami</a>
+            <a href="#">Seattle</a>
+            <a href="#">Boston</a>
+            <a href="#">Dallas</a>
+            <a href="#">Washington DC</a>
+            <a href="#">Atlanta</a>
+            <a href="#">Phoenix</a>
+          </div>
+          <div class="dropdown-col">
+            <div class="dropdown-country">India</div>
+            <a href="#">Mumbai</a>
+            <a href="#">Delhi</a>
+            <a href="#">Bangalore</a>
+            <a href="#">Chennai</a>
+            <a href="#">Hyderabad</a>
+            <a href="#">Kolkata</a>
+            <a href="#">Pune</a>
+            <a href="#">Ahmedabad</a>
+            <a href="#">Jaipur</a>
+            <a href="#">Kochi</a>
+            <div class="dropdown-country">Europe</div>
+            <a href="#">Paris</a>
+            <a href="#">Nice</a>
+            <a href="#">Berlin</a>
+            <a href="#">Munich</a>
+            <a href="#">Frankfurt</a>
+            <a href="#">Zurich</a>
+            <a href="#">Istanbul</a>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="has-dropdown">
+      <a href="#">Veterans</a>
+      <div class="nav-dropdown">
+        <a href="#">USA – VA Foreign Medical Program</a>
+        <a href="#">Australian DVA</a>
+        <a href="#">UK Veterans</a>
+        <a href="#">New Zealand Veterans</a>
+        <a href="#">Canadian Veterans</a>
+      </div>
+    </li>
+    <li class="has-dropdown">
+      <a href="#">Blog</a>
+      <div class="nav-dropdown">
+        <a href="#">Condition &amp; Addiction</a>
+        <a href="#">Sri Lanka Destination</a>
+        <a href="#">Family &amp; Intervention</a>
+        <a href="#">Research &amp; Education</a>
+        <a href="#">City Guides</a>
+        <a href="#">Veterans</a>
+        <a href="#">Recovery &amp; Aftercare</a>
+      </div>
+    </li>
+    <li><a href="guide.html">Free Guide</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="contact.html" class="nav-cta">Get Free Advice</a>
+
+  <button class="nav-hamburger" id="navHamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+
+  <div class="mob-group">
+    <button class="mob-group-header" aria-expanded="false">Treatment <span class="mob-arrow"></span></button>
+    <div class="mob-group-body">
+      <a href="alcohol-rehab-sri-lanka.html">Alcohol Rehab</a>
+      <a href="drug-rehab-sri-lanka.html">Drug Rehab</a>
+      <a href="cocaine-addiction-sri-lanka.html">Cocaine Addiction</a>
+      <a href="heroin-addiction-sri-lanka.html">Heroin Addiction</a>
+      <a href="benzodiazepine-addiction-sri-lanka.html">Benzodiazepines</a>
+      <a href="cannabis-addiction-sri-lanka.html">Cannabis Addiction</a>
+      <a href="mdma-addiction-sri-lanka.html">MDMA Addiction</a>
+      <a href="prescription-drug-addiction-sri-lanka.html">Prescription Drugs</a>
+      <a href="gambling-addiction-sri-lanka.html">Gambling Addiction</a>
+      <a href="sex-addiction-sri-lanka.html">Sex Addiction</a>
+      <a href="dual-diagnosis-sri-lanka.html">Dual Diagnosis</a>
+      <a href="depression-treatment-sri-lanka.html">Depression</a>
+      <a href="anxiety-treatment-sri-lanka.html">Anxiety</a>
+      <a href="burnout-retreat-sri-lanka.html">Burnout</a>
+      <a href="trauma-treatment-sri-lanka.html">Trauma</a>
+    </div>
+  </div>
+
+  <div class="mob-group">
+    <button class="mob-group-header" aria-expanded="false">Information <span class="mob-arrow"></span></button>
+    <div class="mob-group-body">
+      <a href="cost-of-rehab-sri-lanka.html">Cost of Rehab</a>
+      <a href="how-long-is-rehab-sri-lanka.html">How Long is Rehab?</a>
+      <a href="what-to-expect-rehab-sri-lanka.html">What to Expect</a>
+      <a href="rehab-abroad-sri-lanka.html">Rehab Abroad</a>
+      <a href="is-sri-lanka-safe-for-rehab.html">Is Sri Lanka Safe?</a>
+      <a href="inpatient-vs-outpatient-sri-lanka.html">Inpatient vs Outpatient</a>
+      <a href="luxury-rehab-sri-lanka.html">Luxury Rehab</a>
+      <a href="family-support-sri-lanka.html">For Families</a>
+      <a href="how-to-stage-an-intervention.html">How to Stage an Intervention</a>
+      <a href="aftercare-sri-lanka.html">Aftercare</a>
+    </div>
+  </div>
+
+  <div class="mob-group">
+    <button class="mob-group-header" aria-expanded="false">From Your City <span class="mob-arrow"></span></button>
+    <div class="mob-group-body">
+      <div class="mob-country">United Kingdom</div>
+      <a href="rehab-sri-lanka-from-london.html">London</a>
+      <a href="rehab-sri-lanka-from-manchester.html">Manchester</a>
+      <a href="rehab-sri-lanka-from-birmingham.html">Birmingham</a>
+      <a href="rehab-sri-lanka-from-edinburgh.html">Edinburgh</a>
+      <a href="rehab-sri-lanka-from-bristol.html">Bristol</a>
+      <div class="mob-country">UAE</div>
+      <a href="#">Dubai</a>
+      <a href="#">Abu Dhabi</a>
+      <div class="mob-country">Australia</div>
+      <a href="#">Sydney</a>
+      <a href="#">Melbourne</a>
+      <a href="#">Brisbane</a>
+      <a href="#">Perth</a>
+      <a href="#">Adelaide</a>
+      <div class="mob-country">New Zealand</div>
+      <a href="#">Auckland</a>
+      <a href="#">Christchurch</a>
+      <div class="mob-country">Singapore</div>
+      <a href="#">Singapore</a>
+      <div class="mob-country">Hong Kong</div>
+      <a href="#">Hong Kong</a>
+      <div class="mob-country">Qatar</div>
+      <a href="#">Doha</a>
+      <div class="mob-country">Kuwait</div>
+      <a href="#">Kuwait City</a>
+      <div class="mob-country">USA</div>
+      <a href="#">New York</a>
+      <a href="#">Los Angeles</a>
+      <a href="#">San Francisco</a>
+      <a href="#">Chicago</a>
+      <a href="#">Houston</a>
+      <a href="#">Miami</a>
+      <a href="#">Seattle</a>
+      <a href="#">Boston</a>
+      <a href="#">Dallas</a>
+      <a href="#">Washington DC</a>
+      <a href="#">Atlanta</a>
+      <a href="#">Phoenix</a>
+      <div class="mob-country">India</div>
+      <a href="#">Mumbai</a>
+      <a href="#">Delhi</a>
+      <a href="#">Bangalore</a>
+      <a href="#">Chennai</a>
+      <a href="#">Hyderabad</a>
+      <a href="#">Kolkata</a>
+      <a href="#">Pune</a>
+      <a href="#">Ahmedabad</a>
+      <a href="#">Jaipur</a>
+      <a href="#">Kochi</a>
+      <div class="mob-country">Europe</div>
+      <a href="#">Paris</a>
+      <a href="#">Nice</a>
+      <a href="#">Berlin</a>
+      <a href="#">Munich</a>
+      <a href="#">Frankfurt</a>
+      <a href="#">Zurich</a>
+      <a href="#">Istanbul</a>
+      <div class="mob-country">Malaysia</div>
+      <a href="#">Kuala Lumpur</a>
+      <a href="#">Penang</a>
+      <div class="mob-country">Thailand</div>
+      <a href="#">Bangkok</a>
+      <a href="#">Phuket</a>
+      <a href="#">Chiang Mai</a>
+      <div class="mob-country">Japan</div>
+      <a href="#">Tokyo</a>
+      <a href="#">Osaka</a>
+      <div class="mob-country">South Korea</div>
+      <a href="#">Seoul</a>
+      <a href="#">Busan</a>
+    </div>
+  </div>
+
+  <div class="mob-group">
+    <button class="mob-group-header" aria-expanded="false">Veterans <span class="mob-arrow"></span></button>
+    <div class="mob-group-body">
+      <a href="#">USA – VA Foreign Medical Program</a>
+      <a href="#">Australian DVA</a>
+      <a href="#">UK Veterans</a>
+      <a href="#">New Zealand Veterans</a>
+      <a href="#">Canadian Veterans</a>
+    </div>
+  </div>
+
+  <div class="mob-group">
+    <button class="mob-group-header" aria-expanded="false">Blog <span class="mob-arrow"></span></button>
+    <div class="mob-group-body">
+      <a href="#">Condition &amp; Addiction</a>
+      <a href="#">Sri Lanka Destination</a>
+      <a href="#">Family &amp; Intervention</a>
+      <a href="#">Research &amp; Education</a>
+      <a href="#">City Guides</a>
+      <a href="#">Veterans</a>
+      <a href="#">Recovery &amp; Aftercare</a>
+    </div>
+  </div>
+
+  <a href="guide.html" class="mob-flat-link">Free Guide</a>
+  <a href="contact.html" class="mob-flat-link">Contact</a>
+  <a href="contact.html" class="mobile-cta">Get Free Advice</a>
+</div>
+
+<div class="breadcrumb">
+  <a href="index.html">Home</a><span>›</span>
+  <a href="#">Information</a><span>›</span>
+  Inpatient vs Outpatient Rehab
+</div>
+
+<div class="page-hero">
+  <div class="inner">
+    <div class="label a1">UNDERSTANDING YOUR OPTIONS</div>
+    <h1 class="a2">Inpatient vs outpatient <em>rehab</em></h1>
+    <p class="a3">Both have their place. But for most people reading this page, residential inpatient treatment is the right choice. Here is why.</p>
+  </div>
+</div>
+
+<section>
+  <div class="inner">
+    <div class="content-grid">
+      <div class="content-body">
+        <h3>What outpatient treatment means</h3>
+        <p>Outpatient treatment covers a broad spectrum of options. At one end are intensive day programmes, where someone attends a clinic for six to eight hours a day, several days a week, receiving structured therapy while returning home each evening. At the other end are weekly or twice-weekly therapy sessions with a counsellor, sometimes alongside community support groups such as Alcoholics Anonymous or SMART Recovery.</p>
+        <p>Outpatient treatment keeps the person in their existing environment. They continue living at home, potentially working, and managing ordinary life responsibilities. Therapy is scheduled around their daily routine rather than being the total structure of their day.</p>
+
+        <h3>What inpatient residential treatment means</h3>
+        <p>Inpatient, or residential, treatment means living at the clinic for the full duration of your programme. Your daily life is structured around the therapeutic programme. You wake up, eat, attend sessions, engage in activities, and rest within the clinic environment. There is 24-hour staff presence and, in medically supervised clinics, on-call medical support.</p>
+        <p>The defining feature of inpatient treatment is total immersion. You are removed from your usual environment, your usual triggers, and your usual patterns of behaviour. This is not incidental. It is one of the most clinically significant features of the residential model.</p>
+
+        <h3>When outpatient treatment is appropriate</h3>
+        <p>Outpatient treatment is genuinely the right option for some people. Those with a mild dependency, a strong and supportive home environment, no history of relapse after previous attempts at abstinence, and a stable mental health baseline may achieve very good outcomes through structured outpatient care. It is also the appropriate step-down from residential treatment: many people complete a residential programme and then transition to outpatient therapy as part of their aftercare plan.</p>
+        <p>Outpatient treatment is also the default when someone cannot take extended time away from family or work commitments, or when financial constraints make residential treatment inaccessible. In those circumstances, outpatient is always better than nothing.</p>
+
+        <h3>When residential treatment is essential</h3>
+        <p>For moderate to severe dependency, the evidence consistently favours residential treatment. If someone has tried to cut down or stop on their own and has been unable to do so, if they have attended outpatient therapy previously without sustained success, or if the environment at home is itself part of the problem, residential treatment is not simply preferable. It is often the only approach with a realistic chance of working.</p>
+        <p>The reason is straightforward. Addiction is maintained partly by environmental cues. The moment you walk past the pub, see the bottle in the kitchen, or encounter the person you used with, the neurological pull of the addiction is activated. Outpatient treatment asks people to manage that pull while still being surrounded by the cues that activate it. Residential treatment removes those cues entirely, creating a protected space in which real change can happen.</p>
+
+        <h3>International clients are always doing inpatient by definition</h3>
+        <p>If you are reading this from the UK, Australia, the UAE, or anywhere else outside Sri Lanka, and you are considering coming here for treatment, you are by definition considering residential inpatient treatment. There is no outpatient provision for international visitors in this context. You would travel to Sri Lanka, live at the clinic for 28, 60 or 90 days, and return home having completed a full residential programme.</p>
+        <p>This is worth stating clearly because some people come to this page wondering whether they "really" need inpatient. The act of travelling internationally for treatment is itself a sign that you are taking this seriously, and that seriousness is warranted. Travelling to the other side of the world to attend a few sessions per week is not the model here. You are committing to full residential care, and that commitment is appropriate for the scale of the problem you are addressing.</p>
+
+        <h3>What a typical residential day looks like</h3>
+        <p>The structure of a residential day varies between programmes, but broadly follows a pattern: an early morning mindfulness or movement practice, breakfast, a group therapy session before midday, individual therapy on alternating days, lunch, an afternoon of structured holistic activities or guided free time, dinner, and an evening group reflection or step meeting. The structure is designed to fill the day purposefully without being overwhelming, and it changes in emphasis as the programme progresses.</p>
+        <p>To understand the full shape of what to expect, visit our <a href="what-to-expect-rehab-sri-lanka.html" style="color: var(--emerald);">what to expect in rehab</a> page, which walks through the programme day by day.</p>
+      </div>
+
+      <div class="info-card">
+        <h4>Key differences</h4>
+        <div class="info-row"><span>Structure</span><span>Inpatient: full daily programme. Outpatient: scheduled sessions only.</span></div>
+        <div class="info-row"><span>Supervision</span><span>Inpatient: 24-hour. Outpatient: sessions only.</span></div>
+        <div class="info-row"><span>Triggers</span><span>Inpatient: removed. Outpatient: still present.</span></div>
+        <div class="info-row"><span>Cost</span><span>Inpatient: higher but all-inclusive. Outpatient: lower per session.</span></div>
+        <hr class="info-divider" />
+        <div class="info-row"><span>Best for</span><span>Inpatient: moderate to severe. Outpatient: mild dependency.</span></div>
+        <div class="info-row"><span>Sri Lanka option</span><span>Residential inpatient only</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="inner">
+    <div class="label">KEY POINTS</div>
+    <h2 class="sec-title">Understanding the options</h2>
+    <div class="cards-grid">
+      <div class="card">
+        <h4>When outpatient works</h4>
+        <p>Mild dependency, strong home support, no previous treatment failures, and a stable home environment. Outpatient is also the right step-down after completing a residential programme as part of ongoing aftercare.</p>
+      </div>
+      <div class="card">
+        <h4>When residential is essential</h4>
+        <p>Moderate to severe dependency, previous failed attempts to stop, co-occurring mental health issues, or an environment at home that contributes to the problem. Residential removes you from triggers and creates space for real change.</p>
+      </div>
+      <div class="card">
+        <h4>What residential includes</h4>
+        <p>24-hour support, structured daily therapy, individual and group counselling, medical supervision, holistic activities, all meals, and a dedicated aftercare plan. Everything you need, in one contained environment.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="inner">
+    <div class="label">COMMON QUESTIONS</div>
+    <h2 class="sec-title">Frequently asked questions</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">Can outpatient treatment work for alcohol dependency?</div>
+        <div class="faq-a">For mild to moderate alcohol dependency in a person with strong support and a stable environment, structured outpatient treatment can be effective. However, severe alcohol dependency carries medical risks during withdrawal that require clinical supervision. Anyone with a significant alcohol dependency should be medically assessed before attempting to stop drinking, and residential detox is often the safer and more effective route.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Is residential treatment only for people with severe problems?</div>
+        <div class="faq-a">No. Many people who attend residential treatment have what would be described as moderate rather than severe dependency. The appeal of residential treatment is not just for crisis cases. It offers a structured, immersive environment where change can happen more quickly and more thoroughly than through outpatient care. People often choose residential treatment to give themselves the best possible chance, rather than because they have no other option.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">What is the difference between a day programme and full residential?</div>
+        <div class="faq-a">A day programme involves attending a clinic for structured therapy during the day, typically five days a week, while returning home each evening. It is an intensive form of outpatient treatment. Full residential means living at the clinic around the clock. Day programmes can be very effective for the right person, but they still leave evenings and weekends unstructured, which is when many people find the pull of their old patterns strongest.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">How long does residential treatment in Sri Lanka last?</div>
+        <div class="faq-a">Programmes run from a minimum of 28 days to 90 days or longer. The right length depends on your history, your dependency severity, and what you are trying to achieve. We can discuss this in detail during a free initial consultation. Most people arriving from abroad opt for either a 28-day or 60-day programme, though 90-day stays are common for those with more complex histories.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Can I do outpatient follow-up after completing residential in Sri Lanka?</div>
+        <div class="faq-a">Yes, and this is actively recommended. Most people who complete a residential programme in Sri Lanka return home and continue with ongoing outpatient therapy, whether through a private therapist, a structured aftercare group, or a combination of both. Your discharge plan will include recommendations for continuing care in your home country.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <h2>Not sure which option is right for you?</h2>
+  <p>We offer free, confidential advice with no obligation. Tell us your situation and we will give you an honest answer.</p>
+  <div class="cta-form-card">
+    <h3>Get free advice</h3>
+    <form>
+      <input type="hidden" name="source" value="inpatient-page" />
+      <div class="form-row">
+        <div class="fg"><label>First name</label><input type="text" placeholder="Your first name" /></div>
+        <div class="fg"><label>Last name</label><input type="text" placeholder="Your last name" /></div>
+      </div>
+      <div class="fg"><label>Email address</label><input type="email" placeholder="your@email.com" /></div>
+      <div class="fg"><label>Phone / WhatsApp</label><input type="tel" placeholder="+44 or international" /></div>
+      <div class="fg">
+        <label>Who is seeking help?</label>
+        <select>
+          <option value="">Please select</option>
+          <option>Myself</option>
+          <option>A family member</option>
+          <option>A friend or colleague</option>
+        </select>
+      </div>
+      <div class="fg">
+        <label>Primary concern</label>
+        <select>
+          <option value="">Please select</option>
+          <option>Alcohol</option>
+          <option>Drugs</option>
+          <option>Both alcohol and drugs</option>
+          <option>Mental health</option>
+          <option>Not sure yet</option>
+        </select>
+      </div>
+      <button type="submit" class="form-submit">Send my enquiry</button>
+      <p class="form-note">We respond within a few hours. Your information is kept strictly confidential.</p>
+    </form>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <span class="footer-logo-text"><span class="prefix">Rehab </span>Sri Lanka</span>
+      <p class="footer-about">Expert guidance and free advice on drug and alcohol rehabilitation in Sri Lanka. We help you find the right treatment and get into the right programme fast.</p>
+      <div class="footer-contact"><a href="mailto:info@rehabsrilanka.com">info@rehabsrilanka.com</a></div>
+    </div>
+    <div class="footer-col">
+      <h5>Treatment</h5>
+      <a href="alcohol-rehab-sri-lanka.html">Alcohol rehab</a>
+      <a href="drug-rehab-sri-lanka.html">Drug rehab</a>
+      <a href="dual-diagnosis-sri-lanka.html">Dual diagnosis</a>
+      <a href="depression-treatment-sri-lanka.html">Depression</a>
+      <a href="anxiety-treatment-sri-lanka.html">Anxiety</a>
+    </div>
+    <div class="footer-col">
+      <h5>Information</h5>
+      <a href="cost-of-rehab-sri-lanka.html">Cost of rehab</a>
+      <a href="how-long-is-rehab-sri-lanka.html">How long is rehab</a>
+      <a href="rehab-abroad-sri-lanka.html">Rehab abroad</a>
+      <a href="what-to-expect-rehab-sri-lanka.html">What to expect</a>
+      <a href="guide.html">Free guide</a>
+    </div>
+    <div class="footer-col">
+      <h5>About</h5>
+      <a href="about.html">About us</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms.html">Terms</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Rehab Sri Lanka. All rights reserved.</span>
+    <div class="footer-bottom-links">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms.html">Terms</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.faq-item').forEach(item => {
+  item.addEventListener('click', () => {
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  });
+});
+(function(){
+  var btn = document.getElementById('navHamburger');
+  var menu = document.getElementById('mobileMenu');
+  if(!btn||!menu) return;
+  btn.addEventListener('click', function(){ btn.classList.toggle('open'); menu.classList.toggle('open'); });
+  menu.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', function(){ btn.classList.remove('open'); menu.classList.remove('open'); }); });
+})();
+</script>
+</body>
+</html>
