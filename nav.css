@@ -115,7 +115,8 @@ nav {
   height: 12px;
 }
 
-.nav-links > li.has-dropdown:hover .nav-dropdown {
+.nav-links > li.has-dropdown:hover .nav-dropdown,
+.nav-links > li.has-dropdown.dropdown-open .nav-dropdown {
   display: block;
 }
 
@@ -143,15 +144,12 @@ nav {
 /* ── FROM YOUR CITY – wide panel ── */
 
 .city-dropdown-parent {
-  position: static;
+  position: relative;
 }
 
 .nav-dropdown-wide {
-  position: fixed;
-  top: 66px;
-  left: 0;
-  right: 0;
-  width: 100%;
+  position: absolute;
+  top: 100%;
   min-width: unset;
   border-radius: 0 0 10px 10px;
 }

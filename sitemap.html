@@ -906,6 +906,31 @@ document.querySelectorAll('.faq-item').forEach(item => {
   // Close menu on flat link click
   menu.querySelectorAll(');
   });
+  // From Your City – full-width dropdown positioned relative to nav
+  var cityLi = document.querySelector('.city-dropdown-parent');
+  var cityDropdown = cityLi ? cityLi.querySelector('.nav-dropdown-wide') : null;
+  var navEl = document.querySelector('nav');
+  if (cityLi && cityDropdown && navEl) {
+    function positionCityDropdown() {
+      var navRect = navEl.getBoundingClientRect();
+      var liRect = cityLi.getBoundingClientRect();
+      cityDropdown.style.left = (navRect.left - liRect.left) + 'px';
+      cityDropdown.style.width = navRect.width + 'px';
+    }
+    cityLi.addEventListener('mouseenter', function() {
+      positionCityDropdown();
+      cityLi.classList.add('dropdown-open');
+    });
+    cityLi.addEventListener('mouseleave', function() {
+      cityLi.classList.remove('dropdown-open');
+    });
+    cityDropdown.addEventListener('mouseenter', function() {
+      cityLi.classList.add('dropdown-open');
+    });
+    cityDropdown.addEventListener('mouseleave', function() {
+      cityLi.classList.remove('dropdown-open');
+    });
+  }
 })();
 </script>
 </body>
