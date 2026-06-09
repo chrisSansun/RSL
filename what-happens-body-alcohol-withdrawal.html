@@ -28,7 +28,6 @@
 html { scroll-behavior: smooth; }
 body { font-family: 'Outfit', sans-serif; color: var(--text-dark); background: var(--white); font-size: 16px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
 
-/* ARTICLE HERO */
 .article-hero {
   background: var(--emerald-dark);
   padding: 72px 5% 64px;
@@ -65,9 +64,6 @@ body { font-family: 'Outfit', sans-serif; color: var(--text-dark); background: v
   gap: 24px; margin-top: 32px;
   font-size: 12.5px; color: rgba(255,255,255,0.35);
 }
-.article-meta span { display: flex; align-items: center; gap: 6px; }
-
-/* ARTICLE BODY */
 .article-wrap {
   display: grid;
   grid-template-columns: 1fr 300px;
@@ -83,143 +79,41 @@ body { font-family: 'Outfit', sans-serif; color: var(--text-dark); background: v
   line-height: 1.2; margin: 48px 0 16px;
 }
 .article-body h2:first-child { margin-top: 0; }
-.article-body h3 {
-  font-size: 17px; font-weight: 600; color: var(--text-dark);
-  margin: 28px 0 10px;
-}
-.article-body p {
-  font-size: 16px; font-weight: 300; color: var(--text-mid);
-  line-height: 1.8; margin-bottom: 18px;
-}
-.article-body ul, .article-body ol {
-  padding-left: 22px; margin-bottom: 18px;
-}
-.article-body li {
-  font-size: 16px; font-weight: 300; color: var(--text-mid);
-  line-height: 1.75; margin-bottom: 8px;
-}
+.article-body h3 { font-size: 17px; font-weight: 600; color: var(--text-dark); margin: 28px 0 10px; }
+.article-body p { font-size: 16px; font-weight: 300; color: var(--text-mid); line-height: 1.8; margin-bottom: 18px; }
+.article-body ul, .article-body ol { padding-left: 22px; margin-bottom: 18px; }
+.article-body li { font-size: 16px; font-weight: 300; color: var(--text-mid); line-height: 1.75; margin-bottom: 8px; }
 .article-body strong { font-weight: 500; color: var(--text-dark); }
 .article-body a { color: var(--emerald); text-decoration: none; border-bottom: 1px solid var(--emerald-light); }
 .article-body a:hover { border-color: var(--emerald); }
-
-/* callout box */
-.callout {
-  background: var(--emerald-pale);
-  border-left: 3px solid var(--emerald);
-  border-radius: 0 10px 10px 0;
-  padding: 20px 22px;
-  margin: 28px 0;
-}
+.callout { background: var(--emerald-pale); border-left: 3px solid var(--emerald); border-radius: 0 10px 10px 0; padding: 20px 22px; margin: 28px 0; }
 .callout p { margin-bottom: 0; }
 .callout strong { color: var(--emerald); }
-
-/* warning box */
-.warning {
-  background: #fff8f0;
-  border-left: 3px solid #d97706;
-  border-radius: 0 10px 10px 0;
-  padding: 20px 22px;
-  margin: 28px 0;
-}
+.warning { background: #fff8f0; border-left: 3px solid #d97706; border-radius: 0 10px 10px 0; padding: 20px 22px; margin: 28px 0; }
 .warning p { margin-bottom: 0; color: var(--text-mid); }
 .warning strong { color: #b45309; }
-
-/* timeline */
 .timeline { margin: 28px 0; }
-.timeline-item {
-  display: grid; grid-template-columns: 120px 1fr;
-  gap: 20px; padding: 18px 0;
-  border-bottom: 1px solid var(--border);
-}
+.timeline-item { display: grid; grid-template-columns: 120px 1fr; gap: 20px; padding: 18px 0; border-bottom: 1px solid var(--border); }
 .timeline-item:last-child { border-bottom: none; }
-.timeline-time {
-  font-size: 12px; font-weight: 600; color: var(--emerald);
-  text-transform: uppercase; letter-spacing: 0.05em;
-  padding-top: 2px;
-}
-.timeline-content h4 {
-  font-size: 15px; font-weight: 500; color: var(--text-dark);
-  margin-bottom: 5px;
-}
-.timeline-content p {
-  font-size: 14px; margin-bottom: 0;
-}
-
-/* SIDEBAR */
+.timeline-time { font-size: 12px; font-weight: 600; color: var(--emerald); text-transform: uppercase; letter-spacing: 0.05em; padding-top: 2px; }
+.timeline-content h4 { font-size: 15px; font-weight: 500; color: var(--text-dark); margin-bottom: 5px; }
+.timeline-content p { font-size: 14px; margin-bottom: 0; }
 .article-sidebar { position: sticky; top: 90px; }
-.sidebar-card {
-  background: var(--emerald-dark);
-  border-radius: 14px;
-  padding: 28px 24px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-.sidebar-card h3 {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 22px; font-weight: 500; color: var(--white);
-  margin-bottom: 10px;
-}
-.sidebar-card p {
-  font-size: 13.5px; font-weight: 300; color: rgba(255,255,255,0.6);
-  line-height: 1.65; margin-bottom: 20px;
-}
-.sidebar-cta {
-  display: block; background: var(--gold);
-  color: var(--white) !important; font-weight: 500;
-  font-size: 14px; padding: 13px 20px;
-  border-radius: 8px; text-decoration: none;
-  transition: opacity 0.18s; border: none;
-}
+.sidebar-card { background: var(--emerald-dark); border-radius: 14px; padding: 28px 24px; margin-bottom: 20px; text-align: center; }
+.sidebar-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 500; color: var(--white); margin-bottom: 10px; }
+.sidebar-card p { font-size: 13.5px; font-weight: 300; color: rgba(255,255,255,0.6); line-height: 1.65; margin-bottom: 20px; }
+.sidebar-cta { display: block; background: var(--gold); color: var(--white) !important; font-weight: 500; font-size: 14px; padding: 13px 20px; border-radius: 8px; text-decoration: none; transition: opacity 0.18s; }
 .sidebar-cta:hover { opacity: 0.88; }
-.sidebar-links {
-  background: var(--off-white);
-  border: 1px solid var(--border);
-  border-radius: 14px; padding: 22px 20px;
-}
-.sidebar-links h4 {
-  font-size: 11px; font-weight: 600; letter-spacing: 0.08em;
-  text-transform: uppercase; color: var(--text-muted);
-  margin-bottom: 14px;
-}
-.sidebar-links a {
-  display: block; font-size: 13.5px; font-weight: 400;
-  color: var(--text-mid); text-decoration: none;
-  padding: 7px 0; border-bottom: 1px solid var(--border);
-  transition: color 0.15s;
-}
+.sidebar-links { background: var(--off-white); border: 1px solid var(--border); border-radius: 14px; padding: 22px 20px; }
+.sidebar-links h4 { font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 14px; }
+.sidebar-links a { display: block; font-size: 13.5px; font-weight: 400; color: var(--text-mid); text-decoration: none; padding: 7px 0; border-bottom: 1px solid var(--border); transition: color 0.15s; }
 .sidebar-links a:last-child { border-bottom: none; }
 .sidebar-links a:hover { color: var(--emerald); }
-
-/* CTA BANNER */
-.article-cta {
-  background: var(--emerald);
-  border-radius: 14px;
-  padding: 40px 36px;
-  margin-top: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 32px;
-}
-.article-cta h3 {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 26px; font-weight: 500; color: var(--white);
-  margin-bottom: 6px;
-}
-.article-cta p {
-  font-size: 14px; font-weight: 300;
-  color: rgba(255,255,255,0.7); margin: 0;
-}
-.article-cta a {
-  display: inline-block; background: var(--white);
-  color: var(--emerald) !important; font-weight: 600;
-  font-size: 14px; padding: 13px 28px;
-  border-radius: 8px; text-decoration: none;
-  white-space: nowrap; border: none;
-  transition: opacity 0.18s; flex-shrink: 0;
-}
+.article-cta { background: var(--emerald); border-radius: 14px; padding: 40px 36px; margin-top: 48px; display: flex; align-items: center; justify-content: space-between; gap: 32px; }
+.article-cta h3 { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 500; color: var(--white); margin-bottom: 6px; }
+.article-cta p { font-size: 14px; font-weight: 300; color: rgba(255,255,255,0.7); margin: 0; }
+.article-cta a { display: inline-block; background: var(--white); color: var(--emerald) !important; font-weight: 600; font-size: 14px; padding: 13px 28px; border-radius: 8px; text-decoration: none; white-space: nowrap; border: none; transition: opacity 0.18s; flex-shrink: 0; }
 .article-cta a:hover { opacity: 0.9; }
-
 footer { background: #0c1e16; padding: 56px 5% 32px; }
 .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr 1fr; gap: 48px; max-width: 1160px; margin: 0 auto 40px; }
 .footer-logo-text { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 600; color: var(--white); display: block; margin-bottom: 10px; }
@@ -233,7 +127,6 @@ footer { background: #0c1e16; padding: 56px 5% 32px; }
 .footer-bottom-links { display: flex; gap: 20px; }
 .footer-bottom-links a { color: rgba(255,255,255,0.25); text-decoration: none; font-size: 12px; }
 .footer-bottom-links a:hover { color: rgba(255,255,255,0.7); }
-
 @media (max-width: 900px) {
   .article-wrap { grid-template-columns: 1fr; gap: 48px; }
   .article-sidebar { position: static; }
@@ -407,7 +300,7 @@ footer { background: #0c1e16; padding: 56px 5% 32px; }
   <button class="nav-hamburger" id="navHamburger" aria-label="Menu"><span></span><span></span><span></span></button>
 </nav>
 
-<div class="mobile-menu" id="mobileMenu" id="mobileMenu">
+<div class="mobile-menu" id="mobileMenu">
 
   <div class="mob-group">
     <button class="mob-group-header" aria-expanded="false">Treatment <span class="mob-arrow"></span></button>
@@ -430,10 +323,126 @@ footer { background: #0c1e16; padding: 56px 5% 32px; }
     </div>
   </div>
 
-<div class="page-hero">
-  <span class="label">Blog — Condition & Addiction</span>
-  <h1>Condition &amp; Addiction</h1>
-  <p>Understanding addiction is the first step. These articles cover the clinical reality of dependency — from what happens to your body during withdrawal, to the long-term effects of specific substances.</p>
+  <div class="mob-group">
+    <button class="mob-group-header" aria-expanded="false">Information <span class="mob-arrow"></span></button>
+    <div class="mob-group-body">
+      <a href="cost-of-rehab-sri-lanka.html">Cost of Rehab</a>
+      <a href="how-long-is-rehab-sri-lanka.html">How Long is Rehab?</a>
+      <a href="what-to-expect-rehab-sri-lanka.html">What to Expect</a>
+      <a href="rehab-abroad-sri-lanka.html">Rehab Abroad</a>
+      <a href="is-sri-lanka-safe-for-rehab.html">Is Sri Lanka Safe?</a>
+      <a href="inpatient-vs-outpatient-sri-lanka.html">Inpatient vs Outpatient</a>
+      <a href="luxury-rehab-sri-lanka.html">Luxury Rehab</a>
+      <a href="family-support-sri-lanka.html">For Families</a>
+      <a href="how-to-stage-an-intervention.html">How to Stage an Intervention</a>
+      <a href="aftercare-sri-lanka.html">Aftercare</a>
+    </div>
+  </div>
+
+  <div class="mob-group">
+    <button class="mob-group-header" aria-expanded="false">From Your City <span class="mob-arrow"></span></button>
+    <div class="mob-group-body">
+      <div class="mob-country">United Kingdom</div>
+      <a href="rehab-sri-lanka-from-london.html">London</a>
+      <a href="rehab-sri-lanka-from-manchester.html">Manchester</a>
+      <a href="rehab-sri-lanka-from-birmingham.html">Birmingham</a>
+      <a href="rehab-sri-lanka-from-edinburgh.html">Edinburgh</a>
+      <a href="rehab-sri-lanka-from-bristol.html">Bristol</a>
+      <div class="mob-country">UAE</div>
+      <a href="#">Dubai</a>
+      <a href="#">Abu Dhabi</a>
+      <div class="mob-country">Australia</div>
+      <a href="#">Sydney</a>
+      <a href="#">Melbourne</a>
+      <a href="#">Brisbane</a>
+      <a href="#">Perth</a>
+      <a href="#">Adelaide</a>
+      <div class="mob-country">New Zealand</div>
+      <a href="#">Auckland</a>
+      <a href="#">Christchurch</a>
+      <div class="mob-country">Singapore</div>
+      <a href="#">Singapore</a>
+      <div class="mob-country">Hong Kong</div>
+      <a href="#">Hong Kong</a>
+      <div class="mob-country">Qatar</div>
+      <a href="#">Doha</a>
+      <div class="mob-country">Kuwait</div>
+      <a href="#">Kuwait City</a>
+      <div class="mob-country">USA</div>
+      <a href="#">New York</a>
+      <a href="#">Los Angeles</a>
+      <a href="#">San Francisco</a>
+      <a href="#">Chicago</a>
+      <a href="#">Houston</a>
+      <a href="#">Miami</a>
+      <a href="#">Seattle</a>
+      <a href="#">Boston</a>
+      <a href="#">Dallas</a>
+      <a href="#">Washington DC</a>
+      <a href="#">Atlanta</a>
+      <a href="#">Phoenix</a>
+      <div class="mob-country">India</div>
+      <a href="#">Mumbai</a>
+      <a href="#">Delhi</a>
+      <a href="#">Bangalore</a>
+      <a href="#">Chennai</a>
+      <a href="#">Hyderabad</a>
+      <a href="#">Kolkata</a>
+      <a href="#">Pune</a>
+      <a href="#">Ahmedabad</a>
+      <a href="#">Jaipur</a>
+      <a href="#">Kochi</a>
+      <div class="mob-country">Europe</div>
+      <a href="#">Paris</a>
+      <a href="#">Nice</a>
+      <a href="#">Berlin</a>
+      <a href="#">Munich</a>
+      <a href="#">Frankfurt</a>
+      <a href="#">Zurich</a>
+      <a href="#">Istanbul</a>
+      <div class="mob-country">Malaysia</div>
+      <a href="#">Kuala Lumpur</a>
+      <a href="#">Penang</a>
+      <div class="mob-country">Thailand</div>
+      <a href="#">Bangkok</a>
+      <a href="#">Phuket</a>
+      <a href="#">Chiang Mai</a>
+      <div class="mob-country">Japan</div>
+      <a href="#">Tokyo</a>
+      <a href="#">Osaka</a>
+      <div class="mob-country">South Korea</div>
+      <a href="#">Seoul</a>
+      <a href="#">Busan</a>
+    </div>
+  </div>
+
+  <div class="mob-group">
+    <button class="mob-group-header" aria-expanded="false">Veterans <span class="mob-arrow"></span></button>
+    <div class="mob-group-body">
+      <a href="#">USA – VA Foreign Medical Program</a>
+      <a href="#">Australian DVA</a>
+      <a href="#">UK Veterans</a>
+      <a href="#">New Zealand Veterans</a>
+      <a href="#">Canadian Veterans</a>
+    </div>
+  </div>
+
+  <div class="mob-group">
+    <button class="mob-group-header" aria-expanded="false">Blog <span class="mob-arrow"></span></button>
+    <div class="mob-group-body">
+      <a href="#">Condition &amp; Addiction</a>
+      <a href="#">Sri Lanka Destination</a>
+      <a href="#">Family &amp; Intervention</a>
+      <a href="#">Research &amp; Education</a>
+      <a href="#">City Guides</a>
+      <a href="#">Veterans</a>
+      <a href="#">Recovery &amp; Aftercare</a>
+    </div>
+  </div>
+
+  <a href="guide.html" class="mob-flat-link">Free Guide</a>
+  <a href="contact.html" class="mob-flat-link">Contact</a>
+  <a href="contact.html" class="mobile-cta">Get Free Advice</a>
 </div>
 
 <div class="article-hero">
@@ -479,35 +488,35 @@ footer { background: #0c1e16; padding: 56px 5% 32px; }
         <div class="timeline-time">6–12 hours</div>
         <div class="timeline-content">
           <h4>Early symptoms begin</h4>
-          <p>The first signs of withdrawal typically appear within six to twelve hours of the last drink. These include anxiety, restlessness, tremors (shakiness), sweating, nausea, and an elevated heart rate. For many people, this is when the urge to drink again becomes very strong — not because of craving in the usual sense, but because another drink genuinely makes the symptoms go away.</p>
+          <p>The first signs of withdrawal typically appear within six to twelve hours of the last drink. These include anxiety, restlessness, tremors, sweating, nausea, and an elevated heart rate. For many people, this is when the urge to drink again becomes very strong — not because of craving in the usual sense, but because another drink genuinely makes the symptoms go away.</p>
         </div>
       </div>
       <div class="timeline-item">
         <div class="timeline-time">12–24 hours</div>
         <div class="timeline-content">
-          <h4>Symptoms intensify; risk of seizure begins</h4>
-          <p>Between twelve and twenty-four hours, symptoms typically intensify. Tremors worsen. Blood pressure rises. Some people develop hallucinations — visual, auditory, or tactile — while still remaining broadly conscious and aware. This is called alcoholic hallucinosis and is distinct from delirium tremens. Crucially, the risk of seizure begins in this window. Withdrawal seizures are generalised tonic-clonic seizures and can occur without warning.</p>
+          <h4>Symptoms intensify; seizure risk begins</h4>
+          <p>Between twelve and twenty-four hours, symptoms typically intensify. Tremors worsen. Blood pressure rises. Some people develop hallucinations — visual, auditory, or tactile — while still remaining broadly conscious. This is called alcoholic hallucinosis. Crucially, the risk of seizure begins in this window. Withdrawal seizures are generalised tonic-clonic seizures and can occur without warning.</p>
         </div>
       </div>
       <div class="timeline-item">
         <div class="timeline-time">24–72 hours</div>
         <div class="timeline-content">
           <h4>Peak risk — delirium tremens</h4>
-          <p>This is the most dangerous phase. For the majority of people, symptoms will begin to stabilise by 48 to 72 hours. But for a significant minority — estimated at around 5% of those going through alcohol withdrawal — this is when delirium tremens can develop. DTs involve profound confusion, disorientation, fever, severe autonomic instability, and a mortality rate of up to 15% without medical treatment. With proper medical care, that figure falls dramatically.</p>
+          <p>This is the most dangerous phase. For the majority of people, symptoms will begin to stabilise by 48 to 72 hours. But for a significant minority — around 5% — this is when delirium tremens can develop. DTs involve profound confusion, fever, severe autonomic instability, and a mortality rate of up to 15% without medical treatment. With proper medical care, that figure falls dramatically.</p>
         </div>
       </div>
       <div class="timeline-item">
         <div class="timeline-time">3–7 days</div>
         <div class="timeline-content">
           <h4>Gradual stabilisation</h4>
-          <p>For those who have passed through the acute phase safely, symptoms begin to reduce from around day three. Sleep remains disturbed. Anxiety and low mood can persist. Physical symptoms — sweating, tremor, gastrointestinal discomfort — gradually ease. By the end of the first week, most people are physically stable, though far from comfortable.</p>
+          <p>For those who have passed through the acute phase safely, symptoms begin to reduce from around day three. Sleep remains disturbed. Anxiety and low mood persist. Physical symptoms gradually ease. By the end of the first week, most people are physically stable, though far from comfortable.</p>
         </div>
       </div>
       <div class="timeline-item">
         <div class="timeline-time">Weeks 2–4+</div>
         <div class="timeline-content">
           <h4>Post-acute withdrawal</h4>
-          <p>A significant number of people experience what is called post-acute withdrawal syndrome (PAWS) — a prolonged period of mood disturbance, sleep difficulty, cognitive fog, and persistent anxiety that can last weeks or months. This is not dangerous in the same way as acute withdrawal, but it is a real and significant contributor to relapse if it is not understood and managed.</p>
+          <p>A significant number of people experience post-acute withdrawal syndrome (PAWS) — a prolonged period of mood disturbance, sleep difficulty, cognitive fog, and persistent anxiety that can last weeks or months. This is not dangerous in the same way as acute withdrawal, but it is a significant contributor to relapse if not understood and managed.</p>
         </div>
       </div>
     </div>
@@ -516,42 +525,33 @@ footer { background: #0c1e16; padding: 56px 5% 32px; }
     <p>Not everyone who stops drinking will experience severe withdrawal. Risk is higher in people who:</p>
     <ul>
       <li>Have been drinking heavily every day for months or years</li>
-      <li>Drink more than 8 to 10 units per day (roughly a bottle of wine or four to five pints)</li>
+      <li>Drink more than 8 to 10 units per day — roughly a bottle of wine or four to five pints</li>
       <li>Have a history of previous withdrawal seizures or delirium tremens</li>
-      <li>Have gone through multiple previous detoxes — a phenomenon known as "kindling," where each successive withdrawal becomes more severe</li>
+      <li>Have gone through multiple previous detoxes — each successive withdrawal can become more severe, a phenomenon known as kindling</li>
       <li>Have underlying health conditions, particularly liver disease, cardiac issues, or nutritional deficiencies</li>
     </ul>
-    <p>Age is also a factor. Older adults tend to experience more severe withdrawal. So does poor general health, dehydration, and the presence of other substances.</p>
 
     <div class="warning">
-      <p><strong>The kindling effect:</strong> Each time a person goes through alcohol withdrawal, the brain's excitatory response becomes more pronounced. This means that someone on their fifth or sixth detox may experience far more severe symptoms than they did the first time — even if they are drinking the same amount. This is why repeated unsupervised detox attempts carry escalating risk.</p>
+      <p><strong>The kindling effect:</strong> Each time a person goes through alcohol withdrawal, the brain's excitatory response becomes more pronounced. Someone on their fifth or sixth detox may experience far more severe symptoms than they did the first time — even drinking the same amount. This is why repeated unsupervised detox attempts carry escalating risk.</p>
     </div>
 
-    <h2>What a medically supervised detox actually involves</h2>
-    <p>A properly managed alcohol detox is not complicated, but it does require clinical oversight. The cornerstone of medical detox is the use of benzodiazepines — most commonly diazepam or chlordiazepoxide — which work on the same GABA receptors as alcohol and effectively prevent the brain from entering a state of dangerous excitation.</p>
-    <p>In a residential detox programme, medication is typically prescribed on a reducing schedule over five to seven days. Nursing staff monitor vital signs, assess symptom severity using standardised tools, and adjust the dosage accordingly. Thiamine (Vitamin B1) supplementation is given to prevent Wernicke's encephalopathy — a serious neurological complication that can develop when heavy drinkers suddenly stop and are nutritionally depleted.</p>
-    <p>Beyond medication, a good detox environment provides:</p>
-    <ul>
-      <li>Regular meals and adequate hydration</li>
-      <li>A calm, low-stimulation environment</li>
-      <li>Emotional support from experienced staff</li>
-      <li>Preparation for the rehabilitation work that follows</li>
-    </ul>
-    <p>Detox alone is not treatment. It is the medical phase that makes treatment possible. The work of understanding and addressing the dependency begins once the body is stable.</p>
+    <h2>What a medically supervised detox involves</h2>
+    <p>A properly managed alcohol detox is not complicated, but it requires clinical oversight. The cornerstone is the use of benzodiazepines — most commonly diazepam or chlordiazepoxide — which work on the same GABA receptors as alcohol and prevent the brain entering a state of dangerous excitation.</p>
+    <p>In a residential detox programme, medication is prescribed on a reducing schedule over five to seven days. Nursing staff monitor vital signs, assess symptom severity using standardised tools, and adjust dosage accordingly. Thiamine (Vitamin B1) supplementation is given to prevent Wernicke's encephalopathy — a serious neurological complication that can develop when heavy drinkers stop and are nutritionally depleted.</p>
+    <p>Beyond medication, a good detox environment provides regular meals, adequate hydration, a calm low-stimulation setting, emotional support from experienced staff, and preparation for the rehabilitation work that follows. Detox alone is not treatment — it is the medical phase that makes treatment possible.</p>
 
     <h2>The psychological dimension</h2>
     <p>There is a psychological side to withdrawal that is often underestimated. As the sedating effects of alcohol leave the system, emotions that have been numbed for months or years begin to surface. Anxiety is extremely common — sometimes at a level that feels unbearable. Depression frequently emerges. For people who have been using alcohol to manage underlying trauma, the absence of that chemical buffer can be acutely destabilising.</p>
-    <p>This is not weakness. It is neurochemistry. The brain's reward system — which has been flooded with dopamine signals by alcohol — goes into a state of profound under-activity when alcohol is removed. The world feels flat, joyless, threatening. These feelings typically improve significantly over the first two to four weeks, but they are real and they are one of the primary drivers of relapse in early recovery.</p>
-    <p>A residential programme provides something that home detox cannot: trained professionals who understand this process, who can sit with someone through a difficult night, who can begin the therapeutic work of building insight and coping strategies while the body is still recovering.</p>
+    <p>This is not weakness. It is neurochemistry. The brain's reward system — flooded with dopamine signals by alcohol — goes into a state of profound under-activity when alcohol is removed. The world feels flat, joyless, threatening. These feelings typically improve significantly over the first two to four weeks, but they are real and they are one of the primary drivers of relapse in early recovery.</p>
 
     <h2>Why people try to stop alone — and why it often fails</h2>
-    <p>People attempt home detox for understandable reasons. They do not want to admit the extent of their drinking to a doctor. They worry about the stigma of a formal diagnosis. They want to deal with it quietly, without involving family or colleagues. They believe — often sincerely — that they have enough willpower to get through it.</p>
-    <p>What they underestimate is how powerful the physiological drive to drink becomes during withdrawal. When the symptoms set in — the shaking, the sweating, the racing heart, the overwhelming anxiety — drinking one more time does not feel like a choice. It feels like the only way to survive. And in that moment, it provides almost immediate relief. The relief reinforces the behaviour. The cycle continues.</p>
-    <p>This is not a failure of character. It is a neurological trap. The path out of it requires more than willpower — it requires a structured environment, clinical support, and time away from the triggers and pressures that sustain the pattern.</p>
+    <p>People attempt home detox for understandable reasons. They do not want to admit the extent of their drinking to a doctor. They worry about stigma. They want to deal with it quietly. They believe — sincerely — that they have enough willpower to get through it.</p>
+    <p>What they underestimate is how powerful the physiological drive to drink becomes during withdrawal. When symptoms set in — the shaking, sweating, racing heart, overwhelming anxiety — drinking again does not feel like a choice. It feels like the only way to survive. And it provides almost immediate relief. That relief reinforces the behaviour. The cycle continues.</p>
+    <p>This is not a failure of character. It is a neurological trap. The path out requires more than willpower — it requires a structured environment, clinical support, and time away from the triggers and pressures that sustain the pattern.</p>
 
     <h2>Getting the right help</h2>
     <p>If you are concerned about your own drinking — or that of someone close to you — the most important thing is to speak to someone who understands the clinical reality of what you are dealing with. Not to be judged. Not to be given a leaflet. To get an honest assessment of the level of risk and the most appropriate path forward.</p>
-    <p>Residential rehabilitation, particularly in a setting that combines medical detox with structured therapeutic support, produces significantly better long-term outcomes than community detox or outpatient programmes for people with severe alcohol dependency. The evidence on this is consistent. The residential environment removes the person from their triggers, provides continuity of care, and allows the genuine work of recovery to begin.</p>
+    <p>Residential rehabilitation, particularly in a setting that combines medical detox with structured therapeutic support, produces significantly better long-term outcomes than community detox for people with severe alcohol dependency. The residential environment removes the person from their triggers, provides continuity of care, and allows the genuine work of recovery to begin.</p>
     <p>Sri Lanka has become a destination of choice for international clients seeking this level of care — combining internationally trained clinical teams, evidence-based programmes, and a genuinely therapeutic environment, at a cost that compares favourably with Western residential treatment.</p>
 
     <div class="article-cta">
@@ -607,9 +607,17 @@ footer { background: #0c1e16; padding: 56px 5% 32px; }
     <div class="footer-col">
       <h5>Information</h5>
       <a href="cost-of-rehab-sri-lanka.html">Cost of rehab</a>
+      <a href="how-long-is-rehab-sri-lanka.html">How long is rehab</a>
       <a href="rehab-abroad-sri-lanka.html">Rehab abroad</a>
       <a href="what-to-expect-rehab-sri-lanka.html">What to expect</a>
-      <a href="alcohol-withdrawal-sri-lanka.html">Alcohol withdrawal</a>
+    </div>
+    <div class="footer-col">
+      <h5>From Your City</h5>
+      <a href="rehab-sri-lanka-from-london.html">London</a>
+      <a href="rehab-sri-lanka-from-manchester.html">Manchester</a>
+      <a href="rehab-sri-lanka-from-birmingham.html">Birmingham</a>
+      <a href="rehab-sri-lanka-from-edinburgh.html">Edinburgh</a>
+      <a href="rehab-sri-lanka-from-bristol.html">Bristol</a>
     </div>
   </div>
   <div class="footer-bottom">
