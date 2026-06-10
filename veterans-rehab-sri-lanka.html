@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rehab in Sri Lanka for Busan Residents | Rehab Sri Lanka</title>
-<meta name="description" content="Busan residents access internationally accredited rehab in Sri Lanka from $9,900 USD per month — a fraction of UK or US costs. Connections from PUS/GMP. Free confidential advice.">
-<link rel="canonical" href="https://rehabsrilanka.com/rehab-sri-lanka-from-busan.html">
+<title>Rehab in Sri Lanka for Veterans | Rehab Sri Lanka</title>
+<meta name="description" content="Specialist residential rehabilitation in Sri Lanka for military veterans. PTSD, alcohol and drug addiction, dual diagnosis. Trauma-informed treatment. VA, DVA and self-funded options. Free confidential advice.">
+<link rel="canonical" href="https://rehabsrilanka.com/veterans-rehab-sri-lanka.html">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="nav.css?v=2">
 <style>
@@ -15,6 +15,7 @@
   --emerald-dark:  #0e3828;
   --emerald-mid:   #2a7a58;
   --emerald-light: #e6f2ec;
+  --emerald-pale:  #f4faf7;
   --gold:          #b8881e;
   --gold-light:    #faf0db;
   --text-dark:     #131a17;
@@ -30,10 +31,25 @@ body { font-family: 'Outfit', sans-serif; color: var(--text-dark); background: v
 .a1 { animation: fadeUp 0.6s ease both; }
 .a2 { animation: fadeUp 0.6s 0.1s ease both; }
 .a3 { animation: fadeUp 0.6s 0.2s ease both; }
-.hero { position: relative; min-height: 88vh; background: linear-gradient(135deg, #0a2318 0%, #1b5e42 60%, #0e3828 100%); display: grid; grid-template-columns: 1fr 400px; align-items: center; padding: 80px 5%; gap: 56px; }
+
+.hero {
+  position: relative;
+  min-height: 88vh;
+  background: linear-gradient(135deg, #0a2318 0%, #1b5e42 60%, #0e3828 100%);
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  align-items: center;
+  padding: 80px 5%;
+  gap: 56px;
+}
 .hero-overlay { position: absolute; inset: 0; background: linear-gradient(105deg, rgba(8,30,20,0.55) 0%, rgba(8,30,20,0.2) 100%); }
 .hero-copy { position: relative; z-index: 1; max-width: 580px; }
-.hero-eyebrow { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: rgba(255,255,255,0.8); font-size: 11px; font-weight: 500; letter-spacing: 2px; text-transform: uppercase; padding: 5px 16px; border-radius: 30px; margin-bottom: 24px; }
+.hero-eyebrow {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
+  color: rgba(255,255,255,0.8); font-size: 11px; font-weight: 500; letter-spacing: 2px;
+  text-transform: uppercase; padding: 5px 16px; border-radius: 30px; margin-bottom: 24px;
+}
 .hero-eyebrow::before { content: ''; width: 6px; height: 6px; background: var(--gold); border-radius: 50%; }
 .hero h1 { font-family: 'Cormorant Garamond', serif; font-size: 56px; font-weight: 500; color: var(--white); line-height: 1.1; letter-spacing: -0.5px; margin-bottom: 20px; }
 .hero h1 em { font-style: italic; color: rgba(255,255,255,0.6); }
@@ -41,49 +57,67 @@ body { font-family: 'Outfit', sans-serif; color: var(--text-dark); background: v
 .hero-trust { display: flex; flex-wrap: wrap; gap: 16px; }
 .trust-pill { display: flex; align-items: center; gap: 7px; font-size: 12.5px; color: rgba(255,255,255,0.65); font-weight: 300; }
 .trust-pill::before { content: ''; width: 5px; height: 5px; background: var(--gold); border-radius: 50%; flex-shrink: 0; }
+
 .hero-form-card { position: relative; z-index: 1; background: rgba(255,255,255,0.97); border-radius: 16px; padding: 32px 30px 28px; backdrop-filter: blur(10px); }
 .hero-form-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 600; color: var(--text-dark); margin-bottom: 4px; }
 .hf-sub { font-size: 13px; color: var(--text-muted); font-weight: 300; line-height: 1.5; margin-bottom: 18px; }
+.fg { margin-bottom: 12px; }
+.fg label { display: block; font-size: 10.5px; font-weight: 500; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 5px; }
+.fg input, .fg select { width: 100%; padding: 10px 13px; border: 1px solid rgba(27,94,66,0.18); border-radius: 7px; font-size: 14px; font-family: 'Outfit', sans-serif; font-weight: 300; color: var(--text-dark); background: var(--white); outline: none; transition: border-color 0.2s, box-shadow 0.2s; -webkit-appearance: none; }
+.fg input:focus, .fg select:focus { border-color: var(--emerald); box-shadow: 0 0 0 3px rgba(27,94,66,0.08); }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 11px; }
+.form-submit { width: 100%; background: var(--gold); color: var(--white); padding: 13px; border: none; border-radius: 8px; font-size: 15px; font-weight: 500; font-family: 'Outfit', sans-serif; cursor: pointer; margin-top: 4px; transition: opacity 0.18s, transform 0.15s; }
+.form-submit:hover { opacity: 0.9; transform: translateY(-1px); }
 .form-note { font-size: 11px; color: var(--text-muted); text-align: center; margin-top: 9px; font-weight: 300; }
-.whatsapp-cta { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; background: #25d366; color: #fff; padding: 14px 20px; border-radius: 8px; font-size: 16px; font-weight: 500; font-family: 'Outfit', sans-serif; text-decoration: none; transition: opacity 0.18s, transform 0.15s; margin-top: 4px; }
-.whatsapp-cta:hover { opacity: 0.9; transform: translateY(-1px); }
-.whatsapp-cta svg { width: 22px; height: 22px; fill: #fff; flex-shrink: 0; }
-.whatsapp-cta-band { display: inline-flex; align-items: center; justify-content: center; gap: 10px; background: #25d366; color: #fff; padding: 16px 40px; border-radius: 10px; font-size: 18px; font-weight: 500; font-family: 'Outfit', sans-serif; text-decoration: none; transition: opacity 0.18s, transform 0.15s; }
-.whatsapp-cta-band:hover { opacity: 0.9; transform: translateY(-1px); }
-.whatsapp-cta-band svg { width: 24px; height: 24px; fill: #fff; flex-shrink: 0; }
+
 section { padding: 76px 5%; }
 section.alt { background: var(--off-white); }
 .inner { max-width: 1160px; margin: 0 auto; }
 .label { font-size: 10.5px; font-weight: 500; letter-spacing: 2.8px; text-transform: uppercase; color: var(--emerald-mid); margin-bottom: 10px; }
 .sec-title { font-family: 'Cormorant Garamond', serif; font-size: 38px; font-weight: 500; color: var(--text-dark); line-height: 1.18; letter-spacing: -0.3px; margin-bottom: 16px; }
 .sec-body { font-size: 16px; font-weight: 300; color: var(--text-muted); max-width: 680px; line-height: 1.8; margin-bottom: 40px; }
+
 .intro-grid { display: grid; grid-template-columns: 1fr 340px; gap: 64px; align-items: start; }
 .intro-body p { font-size: 15.5px; font-weight: 300; color: var(--text-muted); line-height: 1.85; margin-bottom: 16px; }
-.cost-box { background: var(--emerald-dark); border-radius: 16px; padding: 32px 28px; color: var(--white); }
-.cost-box h4 { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 500; margin-bottom: 20px; color: rgba(255,255,255,0.9); }
-.cost-row { display: flex; justify-content: space-between; align-items: baseline; padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.08); }
-.cost-row:last-child { border-bottom: none; }
-.cost-label { font-size: 13px; font-weight: 300; color: rgba(255,255,255,0.55); }
-.cost-value { font-size: 17px; font-weight: 500; color: var(--white); }
-.cost-value.highlight { color: #7dd9a8; }
-.cost-saving { margin-top: 18px; background: rgba(255,255,255,0.07); border-radius: 9px; padding: 14px 16px; font-size: 13px; color: rgba(255,255,255,0.6); line-height: 1.6; }
+
+.coverage-box { background: var(--emerald-dark); border-radius: 16px; padding: 32px 28px; color: var(--white); }
+.coverage-box h4 { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 500; margin-bottom: 20px; color: rgba(255,255,255,0.9); }
+.coverage-row { display: flex; justify-content: space-between; align-items: baseline; padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.08); }
+.coverage-row:last-child { border-bottom: none; }
+.coverage-label { font-size: 13px; font-weight: 300; color: rgba(255,255,255,0.55); }
+.coverage-value { font-size: 14px; font-weight: 500; color: var(--white); text-align: right; max-width: 140px; line-height: 1.4; }
+.coverage-value.highlight { color: #7dd9a8; }
+.coverage-note { margin-top: 18px; background: rgba(255,255,255,0.07); border-radius: 9px; padding: 14px 16px; font-size: 13px; color: rgba(255,255,255,0.6); line-height: 1.6; }
+
 .cards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
 .card { background: var(--white); border: 1px solid var(--border); border-radius: 14px; padding: 26px 22px; border-top: 3px solid var(--emerald-light); transition: border-top-color 0.2s, box-shadow 0.2s; }
 .card:hover { border-top-color: var(--emerald); box-shadow: 0 4px 20px rgba(27,94,66,0.07); }
 .card h4 { font-size: 14.5px; font-weight: 500; color: var(--text-dark); margin-bottom: 7px; }
 .card p { font-size: 13.5px; font-weight: 300; color: var(--text-muted); line-height: 1.7; }
+
+.country-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 40px; }
+.country-card { border: 1px solid var(--border); border-radius: 16px; padding: 30px 26px; text-decoration: none; background: var(--white); transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s; display: block; }
+.country-card:hover { border-color: var(--emerald); box-shadow: 0 6px 28px rgba(27,94,66,0.1); transform: translateY(-2px); }
+.country-flag { font-size: 28px; margin-bottom: 14px; display: block; }
+.country-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 600; color: var(--text-dark); margin-bottom: 8px; }
+.country-card .scheme { font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--emerald); margin-bottom: 10px; display: block; }
+.country-card p { font-size: 13.5px; font-weight: 300; color: var(--text-muted); line-height: 1.65; margin-bottom: 16px; }
+.country-card .read-more { font-size: 13px; font-weight: 500; color: var(--emerald); }
+
 .journey-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
 .journey-step { display: flex; gap: 18px; padding: 20px 0; border-bottom: 1px solid var(--border); }
 .journey-step:last-child { border-bottom: none; }
 .journey-n { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 600; color: var(--emerald-light); line-height: 1; flex-shrink: 0; padding-top: 2px; }
 .journey-step h4 { font-size: 14.5px; font-weight: 500; color: var(--text-dark); margin-bottom: 5px; }
 .journey-step p { font-size: 13.5px; font-weight: 300; color: var(--text-muted); line-height: 1.7; }
+
 .info-box { background: var(--gold-light); border: 1px solid rgba(184,136,30,0.2); border-radius: 14px; padding: 28px 26px; }
 .info-box h4 { font-family: 'Cormorant Garamond', serif; font-size: 19px; font-weight: 600; color: var(--text-dark); margin-bottom: 14px; }
 .info-row { display: flex; justify-content: space-between; padding: 9px 0; border-bottom: 1px solid rgba(184,136,30,0.15); font-size: 13.5px; }
 .info-row:last-child { border-bottom: none; }
 .info-row span:first-child { color: var(--text-muted); font-weight: 300; }
 .info-row span:last-child { color: var(--text-dark); font-weight: 500; }
+
 .faq-list { max-width: 780px; }
 .faq-item { border-bottom: 1px solid var(--border); padding: 20px 0; cursor: pointer; }
 .faq-item:first-child { border-top: 1px solid var(--border); }
@@ -92,14 +126,23 @@ section.alt { background: var(--off-white); }
 .faq-item.open .faq-q::after { transform: rotate(45deg); }
 .faq-a { display: none; font-size: 14px; font-weight: 300; color: var(--text-muted); line-height: 1.75; padding-top: 12px; max-width: 680px; }
 .faq-item.open .faq-a { display: block; }
+
 .cta-band { background: linear-gradient(140deg, var(--emerald-dark) 0%, var(--emerald) 100%); padding: 76px 5%; text-align: center; }
 .cta-band h2 { font-family: 'Cormorant Garamond', serif; font-size: 42px; font-weight: 500; color: var(--white); margin-bottom: 12px; letter-spacing: -0.3px; }
 .cta-band p { font-size: 17px; font-weight: 300; color: rgba(255,255,255,0.65); margin-bottom: 36px; line-height: 1.75; }
+.cta-form-card { background: var(--white); border-radius: 18px; padding: 40px; max-width: 560px; margin: 0 auto; text-align: left; }
+.cta-form-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 600; color: var(--text-dark); margin-bottom: 20px; }
+.cta-form-card .fg { margin-bottom: 13px; }
+.cta-form-card .form-submit { background: var(--emerald); }
 .cta-band .sub-note { font-size: 13px; color: rgba(255,255,255,0.4); margin-top: 16px; margin-bottom: 0; font-weight: 300; }
+.cta-or { display: flex; align-items: center; gap: 12px; margin: 18px 0 14px; color: var(--text-muted); font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 500; }
+.cta-or::before, .cta-or::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
 .breadcrumb { padding: 12px 5%; background: var(--off-white); border-bottom: 1px solid var(--border); font-size: 12px; color: var(--text-muted); }
 .breadcrumb a { color: var(--text-muted); text-decoration: none; }
 .breadcrumb a:hover { color: var(--emerald); }
 .breadcrumb span { margin: 0 6px; }
+
 footer { background: #0c1e16; padding: 56px 5% 32px; }
 .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr 1fr; gap: 48px; max-width: 1160px; margin: 0 auto 40px; }
 .footer-logo-text { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 600; color: var(--white); display: block; margin-bottom: 10px; }
@@ -113,19 +156,30 @@ footer { background: #0c1e16; padding: 56px 5% 32px; }
 .footer-bottom-links { display: flex; gap: 20px; }
 .footer-bottom-links a { color: rgba(255,255,255,0.25); text-decoration: none; font-size: 12px; }
 .footer-bottom-links a:hover { color: rgba(255,255,255,0.7); }
+
+.whatsapp-cta { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; background: #25d366; color: #fff; padding: 14px 20px; border-radius: 8px; font-size: 16px; font-weight: 500; font-family: 'Outfit', sans-serif; text-decoration: none; transition: opacity 0.18s, transform 0.15s; margin-top: 4px; }
+.whatsapp-cta:hover { opacity: 0.9; transform: translateY(-1px); }
+.whatsapp-cta svg { width: 22px; height: 22px; fill: #fff; flex-shrink: 0; }
+.whatsapp-cta-band { display: inline-flex; align-items: center; justify-content: center; gap: 10px; background: #25d366; color: #fff; padding: 16px 40px; border-radius: 10px; font-size: 18px; font-weight: 500; font-family: 'Outfit', sans-serif; text-decoration: none; transition: opacity 0.18s, transform 0.15s; }
+.whatsapp-cta-band:hover { opacity: 0.9; transform: translateY(-1px); }
+.whatsapp-cta-band svg { width: 24px; height: 24px; fill: #fff; flex-shrink: 0; }
+.cta-form-card .whatsapp-cta { margin-top: 0; }
+
 @media (max-width: 1000px) {
   .hero { grid-template-columns: 1fr; min-height: auto; padding-top: 60px; }
   .hero-form-card { max-width: 480px; }
   .intro-grid { grid-template-columns: 1fr; }
   .cards-grid { grid-template-columns: 1fr 1fr; }
+  .country-grid { grid-template-columns: 1fr 1fr; }
   .journey-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 600px) {
   .hero h1 { font-size: 36px; }
   .cards-grid { grid-template-columns: 1fr; }
+  .country-grid { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; gap: 28px; }
-  .whatsapp-cta-band { padding: 14px 24px; font-size: 16px; }
 }
 </style>
 </head>
@@ -287,6 +341,7 @@ footer { background: #0c1e16; padding: 56px 5% 32px; }
   <a href="contact.html" class="nav-cta">Get Free Advice</a>
   <button class="nav-hamburger" id="navHamburger" aria-label="Menu"><span></span><span></span><span></span></button>
 </nav>
+
 <div class="mobile-menu" id="mobileMenu">
   <div class="mob-group">
     <button class="mob-group-header" aria-expanded="false">Treatment <span class="mob-arrow"></span></button>
@@ -344,14 +399,6 @@ footer { background: #0c1e16; padding: 56px 5% 32px; }
       <div class="mob-country">New Zealand</div>
       <a href="rehab-sri-lanka-from-auckland.html">Auckland</a>
       <a href="rehab-sri-lanka-from-christchurch.html">Christchurch</a>
-      <div class="mob-country">Singapore</div>
-      <a href="rehab-sri-lanka-from-singapore.html">Singapore</a>
-      <div class="mob-country">Hong Kong</div>
-      <a href="rehab-sri-lanka-from-hong-kong.html">Hong Kong</a>
-      <div class="mob-country">Qatar</div>
-      <a href="rehab-sri-lanka-from-doha.html">Doha</a>
-      <div class="mob-country">Kuwait</div>
-      <a href="rehab-sri-lanka-from-kuwait-city.html">Kuwait City</a>
       <div class="mob-country">USA</div>
       <a href="rehab-sri-lanka-from-new-york.html">New York</a>
       <a href="rehab-sri-lanka-from-los-angeles.html">Los Angeles</a>
@@ -359,44 +406,10 @@ footer { background: #0c1e16; padding: 56px 5% 32px; }
       <a href="rehab-sri-lanka-from-chicago.html">Chicago</a>
       <a href="rehab-sri-lanka-from-houston.html">Houston</a>
       <a href="rehab-sri-lanka-from-miami.html">Miami</a>
-      <a href="rehab-sri-lanka-from-seattle.html">Seattle</a>
-      <a href="rehab-sri-lanka-from-boston.html">Boston</a>
-      <a href="rehab-sri-lanka-from-dallas.html">Dallas</a>
-      <a href="rehab-sri-lanka-from-washington-dc.html">Washington DC</a>
-      <a href="rehab-sri-lanka-from-atlanta.html">Atlanta</a>
-      <a href="rehab-sri-lanka-from-phoenix.html">Phoenix</a>
       <div class="mob-country">India</div>
       <a href="rehab-sri-lanka-from-mumbai.html">Mumbai</a>
       <a href="rehab-sri-lanka-from-delhi.html">Delhi</a>
       <a href="rehab-sri-lanka-from-bangalore.html">Bangalore</a>
-      <a href="rehab-sri-lanka-from-chennai.html">Chennai</a>
-      <a href="rehab-sri-lanka-from-hyderabad.html">Hyderabad</a>
-      <a href="rehab-sri-lanka-from-kolkata.html">Kolkata</a>
-      <a href="rehab-sri-lanka-from-pune.html">Pune</a>
-      <a href="rehab-sri-lanka-from-ahmedabad.html">Ahmedabad</a>
-      <a href="rehab-sri-lanka-from-jaipur.html">Jaipur</a>
-      <a href="rehab-sri-lanka-from-kochi.html">Kochi</a>
-      <div class="mob-country">Europe</div>
-      <a href="rehab-sri-lanka-from-paris.html">Paris</a>
-      <a href="rehab-sri-lanka-from-nice.html">Nice</a>
-      <a href="rehab-sri-lanka-from-berlin.html">Berlin</a>
-      <a href="rehab-sri-lanka-from-munich.html">Munich</a>
-      <a href="rehab-sri-lanka-from-frankfurt.html">Frankfurt</a>
-      <a href="rehab-sri-lanka-from-zurich.html">Zurich</a>
-      <a href="rehab-sri-lanka-from-istanbul.html">Istanbul</a>
-      <div class="mob-country">Malaysia</div>
-      <a href="rehab-sri-lanka-from-kuala-lumpur.html">Kuala Lumpur</a>
-      <a href="rehab-sri-lanka-from-penang.html">Penang</a>
-      <div class="mob-country">Thailand</div>
-      <a href="rehab-sri-lanka-from-bangkok.html">Bangkok</a>
-      <a href="rehab-sri-lanka-from-phuket.html">Phuket</a>
-      <a href="rehab-sri-lanka-from-chiang-mai.html">Chiang Mai</a>
-      <div class="mob-country">Japan</div>
-      <a href="rehab-sri-lanka-from-tokyo.html">Tokyo</a>
-      <a href="rehab-sri-lanka-from-osaka.html">Osaka</a>
-      <div class="mob-country">South Korea</div>
-      <a href="rehab-sri-lanka-from-seoul.html">Seoul</a>
-      <a href="rehab-sri-lanka-from-busan.html">Busan</a>
     </div>
   </div>
   <div class="mob-group">
@@ -427,192 +440,305 @@ footer { background: #0c1e16; padding: 56px 5% 32px; }
 </div>
 
 <div class="breadcrumb">
-  <a href="index.html">Home</a> <span>›</span> <a href="#">From Your City</a> <span>›</span> <strong>Rehab in Sri Lanka from Busan</strong>
+  <a href="index.html">Home</a> <span>›</span> <strong>Veterans</strong>
 </div>
 
+<!-- HERO -->
 <div class="hero">
   <div class="hero-overlay"></div>
   <div class="hero-copy">
-    <div class="hero-eyebrow a1">For Busan Residents</div>
-    <h1 class="a2">Rehab in Sri Lanka<br><em>from Busan</em></h1>
-    <p class="hero-sub a3">Busan residents access internationally accredited addiction treatment in Sri Lanka from $9,900 USD per month — a fraction of what equivalent care costs in the UK or United States. Connections via Gimhae International Airport, with English-speaking clinical teams in Sri Lanka.</p>
+    <div class="hero-eyebrow a1">For Military Veterans</div>
+    <h1 class="a2">Rehab in Sri Lanka<br><em>for Veterans</em></h1>
+    <p class="hero-sub a3">Military service creates specific patterns of trauma, addiction, and mental health crisis that standard residential programmes are not always equipped to treat. We work with veterans from the US, Australia, the UK, and New Zealand — and we understand the difference between serving and civilian life.</p>
     <div class="hero-trust a3">
-      <div class="trust-pill">Connections from PUS via ICN</div>
-      <div class="trust-pill">English-speaking clinical teams</div>
-      <div class="trust-pill">Complete privacy from Korean networks</div>
+      <div class="trust-pill">Trauma-informed clinical teams</div>
+      <div class="trust-pill">PTSD and dual diagnosis treatment</div>
+      <div class="trust-pill">VA and DVA funding guidance</div>
       <div class="trust-pill">Free confidential consultation</div>
     </div>
   </div>
   <div class="hero-form-card a3">
-    <h3>Get free advice today</h3>
-    <p class="hf-sub">Speak with an advisor in confidence. No obligation, no pressure.</p>
-    <a href="https://wa.me/94763247711" class="whatsapp-cta" target="_blank" rel="noopener">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-      WhatsApp Us Now
-    </a>
-    <p class="form-note">Free advice. No pressure. 100% confidential.</p>
+    <form action="https://formspree.io/f/xaqzqnvj" method="POST">
+      <input type="hidden" name="source" value="veterans-hub">
+      <input type="hidden" name="_next" value="false">
+      <h3>Get free advice today</h3>
+      <p class="hf-sub">Speak with an advisor who understands veterans' needs. No obligation.</p>
+      <div class="form-row">
+        <div class="fg"><label>Name</label><input type="text" name="name" placeholder="First name"></div>
+        <div class="fg"><label>Phone</label><input type="tel" name="phone" placeholder="Your number"></div>
+      </div>
+      <div class="fg"><label>Email</label><input type="email" name="email" placeholder="email@example.com"></div>
+      <div class="fg">
+        <label>Country of service</label>
+        <select name="country">
+          <option value="">Select one</option>
+          <option>United States</option>
+          <option>Australia</option>
+          <option>United Kingdom</option>
+          <option>New Zealand</option>
+          <option>Canada</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <button class="form-submit" type="submit">Send my enquiry</button>
+      <p class="form-note">Free advice. No pressure. 100% confidential.</p>
+    </form>
   </div>
 </div>
 
+<!-- INTRO -->
 <section id="about">
   <div class="inner">
     <div class="intro-grid">
       <div class="intro-body">
-        <div class="label">Busan residents and rehab abroad</div>
-        <h2 class="sec-title">Why Busan residents choose Sri Lanka for treatment</h2>
-        <p>Busan is South Korea's second largest city and its busiest port — a metropolis shaped by intense commerce, maritime industry, and a fast-paced professional culture. Like elsewhere in Korea, alcohol is deeply embedded in the social fabric of Busan's business community, and dependency can develop in a context where heavy drinking is accepted and even expected at work functions and social events.</p>
-        <p>South Korea's deep stigma around mental health and addiction means that many Busan residents who need treatment will delay seeking it for years. In a city where professional reputation is closely tied to personal identity, the fear of being seen to need help can feel insurmountable. Local treatment options — while available — rarely offer the international clinical frameworks or the cultural separation that many Busan residents require.</p>
-        <p>Sri Lanka provides the complete solution: internationally trained clinical teams delivering evidence-based programmes in English, a genuinely therapeutic natural environment, and complete separation from Korean professional and social life. Treatment starts from $9,900 USD per month — a fraction of what equivalent care costs in the UK (£8,000–£20,000/month) or the United States ($30,000–$60,000/month).</p>
-        <p>From Gimhae International Airport, Busan residents can fly via Seoul's Incheon Airport to connect to Colombo via Singapore, Bangkok, or Kuala Lumpur. Total journey time is approximately 10–12 hours including connections.</p>
+        <div class="label">Why veterans need specialist treatment</div>
+        <h2 class="sec-title">Military service and addiction — what standard rehab misses</h2>
+        <p>Addiction among veterans is rarely just about the substance. It is almost always rooted in what happened during and after service — the trauma of combat or operational duty, the culture of stoicism and self-reliance that makes asking for help feel like weakness, the abrupt loss of purpose and structure that comes with leaving the military, and the difficulty of re-entering a civilian world that does not understand what service involved.</p>
+        <p>Standard residential programmes treat the addiction. Specialist veterans treatment treats the person — the whole context of who they are, what they experienced, and why they are using. This means EMDR and prolonged exposure for PTSD, moral injury work, peer support from others with operational backgrounds, and clinical teams that do not require explanation of things civilians have never experienced.</p>
+        <p>Sri Lanka offers something that domestic veterans services — whether VA facilities, DVA-funded clinics, or NHS veteran units — often cannot: immediate admission, genuine privacy, a therapeutic environment with no military institutional culture, and internationally trained clinical teams delivering evidence-based trauma and addiction treatment at a fraction of the cost of equivalent private provision in the US, Australia, or the UK.</p>
+        <p>We work with veterans from all backgrounds. We can advise on funding options specific to your country of service, help you navigate the pre-authorisation process where applicable, and ensure you are matched to the right clinical programme for your specific presentation.</p>
       </div>
-      <div class="cost-box">
-        <h4>International treatment costs: context for Busan residents</h4>
-        <div class="cost-row">
-          <span class="cost-label">UK private clinic (28 days)</span>
-          <span class="cost-value">£8,000–£20,000</span>
+      <div class="coverage-box">
+        <h4>Veterans we work with</h4>
+        <div class="coverage-row">
+          <span class="coverage-label">United States</span>
+          <span class="coverage-value highlight">VA FMP eligible</span>
         </div>
-        <div class="cost-row">
-          <span class="cost-label">US private clinic (28 days)</span>
-          <span class="cost-value">$30,000–$60,000</span>
+        <div class="coverage-row">
+          <span class="coverage-label">Australia</span>
+          <span class="coverage-value highlight">DVA NLHC eligible</span>
         </div>
-        <div class="cost-row">
-          <span class="cost-label">Sri Lanka residential (28 days)</span>
-          <span class="cost-value highlight">from $9,900 USD</span>
+        <div class="coverage-row">
+          <span class="coverage-label">United Kingdom</span>
+          <span class="coverage-value">Op COURAGE + charity funding</span>
         </div>
-        <div class="cost-row">
-          <span class="cost-label">Flight: Busan to Colombo</span>
-          <span class="cost-value">~10–12 hours (via Seoul/hub)</span>
+        <div class="coverage-row">
+          <span class="coverage-label">New Zealand</span>
+          <span class="coverage-value">VANZ eligible</span>
         </div>
-        <div class="cost-saving">Sri Lanka delivers internationally accredited clinical quality at a fraction of Western private rehab costs — making world-class treatment genuinely accessible to Busan residents.</div>
+        <div class="coverage-row">
+          <span class="coverage-label">Canada</span>
+          <span class="coverage-value">VAC + insurance</span>
+        </div>
+        <div class="coverage-row">
+          <span class="coverage-label">Admission time</span>
+          <span class="coverage-value highlight">5 to 10 days</span>
+        </div>
+        <div class="coverage-note">We advise on all available funding routes and assist with pre-authorisation paperwork where required.</div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- COUNTRY PAGES -->
 <section class="alt">
   <div class="inner">
-    <div class="label">The case for going abroad</div>
-    <h2 class="sec-title">Why leaving Busan matters for recovery</h2>
-    <p class="sec-body">For Busan residents, the physical separation from Korea is often as important clinically as the treatment itself. These are the key reasons Busan clients choose Sri Lanka.</p>
+    <div class="label">Your country of service</div>
+    <h2 class="sec-title">Veterans funding guides by country</h2>
+    <p class="sec-body">Funding eligibility, application processes, and what is and is not covered varies significantly by country. Select your country of service for specific guidance.</p>
+    <div class="country-grid">
+      <a href="veterans-us-va-rehab-sri-lanka.html" class="country-card">
+        <span class="country-flag">🇺🇸</span>
+        <span class="scheme">VA Foreign Medical Program</span>
+        <h3>US Veterans</h3>
+        <p>The VA Foreign Medical Program can reimburse treatment overseas for service-connected conditions including PTSD and substance use disorder. We explain eligibility, registration, and how to submit a claim.</p>
+        <span class="read-more">Read the US veterans guide →</span>
+      </a>
+      <a href="veterans-australia-dva-rehab-sri-lanka.html" class="country-card">
+        <span class="country-flag">🇦🇺</span>
+        <span class="scheme">DVA Non-Liability Health Care</span>
+        <h3>Australian Veterans</h3>
+        <p>Australian DVA's Non-Liability Health Care allows eligible veterans to access funded mental health and addiction treatment without needing to establish service connection. Gold and White card holders have additional options.</p>
+        <span class="read-more">Read the Australian veterans guide →</span>
+      </a>
+      <a href="veterans-uk-rehab-sri-lanka.html" class="country-card">
+        <span class="country-flag">🇬🇧</span>
+        <span class="scheme">Op COURAGE + Charity Funding</span>
+        <h3>UK Veterans</h3>
+        <p>NHS provision through Op COURAGE is improving but remains limited in access to residential addiction treatment. We cover the charity and self-funded routes available to UK veterans seeking treatment abroad.</p>
+        <span class="read-more">Read the UK veterans guide →</span>
+      </a>
+      <a href="veterans-new-zealand-rehab-sri-lanka.html" class="country-card">
+        <span class="country-flag">🇳🇿</span>
+        <span class="scheme">Veterans' Affairs New Zealand</span>
+        <h3>New Zealand Veterans</h3>
+        <p>Veterans' Affairs New Zealand funds treatment for conditions arising from qualifying service. We explain VANZ eligibility, the treatment authority process, and how New Zealand veterans can access treatment in Sri Lanka.</p>
+        <span class="read-more">Read the NZ veterans guide →</span>
+      </a>
+      <a href="veterans-canada-rehab-sri-lanka.html" class="country-card">
+        <span class="country-flag">🇨🇦</span>
+        <span class="scheme">Veterans Affairs Canada</span>
+        <h3>Canadian Veterans</h3>
+        <p>Veterans Affairs Canada funds a range of mental health and rehabilitation services. We cover the Rehabilitation Services and Vocational Assistance Program and how Canadian veterans can access overseas treatment.</p>
+        <span class="read-more">Read the Canadian veterans guide →</span>
+      </a>
+      <a href="veterans-ptsd-addiction-sri-lanka.html" class="country-card">
+        <span class="country-flag">🎖️</span>
+        <span class="scheme">Clinical — All Nationalities</span>
+        <h3>PTSD and Addiction</h3>
+        <p>PTSD and substance use disorder co-occur in a significant proportion of veterans. Standard rehab without integrated trauma treatment rarely holds. We explain the clinical approach that works.</p>
+        <span class="read-more">Read the PTSD and addiction guide →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- WHY SRI LANKA FOR VETERANS -->
+<section>
+  <div class="inner">
+    <div class="label">Why it works for veterans</div>
+    <h2 class="sec-title">Why veterans choose overseas treatment in Sri Lanka</h2>
+    <p class="sec-body">Distance from home is not just logistically convenient. For veterans, it is often clinically necessary.</p>
     <div class="cards-grid">
       <div class="card">
-        <h4>Away from Busan's business culture</h4>
-        <p>Busan's commercial culture — centred on shipping, trade, and corporate entertainment — creates an environment where alcohol dependency is easily hidden and socially reinforced. Recovery begins with leaving that environment behind.</p>
+        <h4>No institutional culture</h4>
+        <p>VA and DVA facilities can carry the weight of military institutional culture — hierarchy, bureaucracy, the feeling of still being inside the system. Sri Lanka offers a clean break: civilian, private, and completely removed from that environment.</p>
       </div>
       <div class="card">
-        <h4>Beyond Korea's stigma barrier</h4>
-        <p>South Korea's deep cultural stigma around mental health prevents many from seeking help domestically. Sri Lanka offers a genuinely neutral, judgment-free environment where clients can focus entirely on recovery.</p>
+        <h4>Genuine privacy</h4>
+        <p>Many veterans are concerned about how a formal mental health or addiction diagnosis will affect their security clearance, employment, or standing within veteran communities. Treatment in Sri Lanka is private, confidential, and at a complete geographic remove from those concerns.</p>
       </div>
       <div class="card">
-        <h4>English-language international programmes</h4>
-        <p>All treatment is delivered in English using internationally recognised clinical frameworks. For Busan residents comfortable in English — expatriates and internationally educated professionals — this presents no barrier to care.</p>
+        <h4>Immediate admission</h4>
+        <p>VA waiting lists for residential mental health care can run to months. DVA can take time to process treatment authority requests. We can arrange admission within 5 to 10 days of initial enquiry for self-funded and pre-authorised cases.</p>
       </div>
       <div class="card">
-        <h4>Complete separation from Korean networks</h4>
-        <p>Family expectations, professional obligations, and Busan's tightly networked business community can work against recovery even at a distance. Sri Lanka provides the clean break that lasting recovery requires.</p>
+        <h4>Trauma-informed treatment</h4>
+        <p>The clinical teams we work with have experience treating complex trauma, PTSD, and co-occurring addiction. Treatment includes EMDR, prolonged exposure, trauma-focused CBT, and grief and loss work appropriate to the experiences of military service.</p>
       </div>
       <div class="card">
-        <h4>International quality at accessible cost</h4>
-        <p>UK and US private rehab is often prohibitively expensive. Sri Lanka delivers the same evidence-based clinical quality at a fraction of the price — making internationally accredited treatment genuinely accessible.</p>
+        <h4>Cost significantly lower than private domestic care</h4>
+        <p>A 28-day private residential programme in the US, Australia, or UK costs between $15,000 and $45,000 USD. Sri Lanka starts from $9,900 USD per month — enabling longer stays and more intensive treatment at a fraction of the cost.</p>
       </div>
       <div class="card">
-        <h4>A truly restorative environment</h4>
-        <p>Sri Lanka's tropical landscape, warm climate, and calmer way of life provide a profound contrast to Busan's intensity. The setting itself supports recovery in ways that no urban clinic can replicate.</p>
+        <h4>A therapeutic environment that supports recovery</h4>
+        <p>Sri Lanka's climate, natural environment, and pace of life provide a genuinely restorative setting. Many veterans describe the physical distance from the triggers, people, and patterns of home life as one of the most important factors in their recovery.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section>
+<!-- PROCESS -->
+<section class="alt">
   <div class="inner">
     <div class="journey-grid">
       <div>
-        <div class="label">Getting there from Busan</div>
-        <h2 class="sec-title">The journey from Busan to Sri Lanka</h2>
-        <p style="font-size:15px;font-weight:300;color:var(--text-muted);line-height:1.8;margin-bottom:28px;">Busan connects to Colombo via Seoul or other regional hubs. The journey is straightforward and takes approximately 10–12 hours in total.</p>
+        <div class="label">How it works</div>
+        <h2 class="sec-title">The process from first contact to admission</h2>
+        <p style="font-size:15px;font-weight:300;color:var(--text-muted);line-height:1.8;margin-bottom:28px;">We handle the process around you. From the initial conversation through to arrival at the clinic, we manage the logistics so you can focus on the decision to get well.</p>
         <div class="journey-step">
           <div class="journey-n">1</div>
           <div>
-            <h4>Fly from Gimhae (PUS) or connect via Incheon (ICN)</h4>
-            <p>The most convenient routing for Busan residents is a short domestic flight to Seoul Incheon (ICN) or a direct international departure from Gimhae International Airport (PUS), then onward to Colombo via Singapore, Bangkok, or Kuala Lumpur.</p>
+            <h4>Free confidential consultation</h4>
+            <p>We start with a phone or WhatsApp conversation to understand your situation, your history of service, and what you are dealing with clinically. There is no obligation and everything is confidential.</p>
           </div>
         </div>
         <div class="journey-step">
           <div class="journey-n">2</div>
           <div>
-            <h4>Connect via Singapore, Bangkok, or Kuala Lumpur</h4>
-            <p>Singapore Airlines via Changi, Thai Airways via Bangkok, and Malaysia Airlines via KL all offer convenient connections to Colombo (CMB) with reliable frequency throughout the week.</p>
+            <h4>Funding and programme matching</h4>
+            <p>We advise on what funding may be available to you based on your country of service and your discharge status. We then identify the right clinical programme for your presentation — not all programmes are equipped for veterans with complex trauma.</p>
           </div>
         </div>
         <div class="journey-step">
           <div class="journey-n">3</div>
           <div>
-            <h4>Arrival and transfer in Colombo</h4>
-            <p>All clients are met on arrival at Bandaranaike International Airport (CMB) by a clinic representative and transferred directly to the treatment facility. No independent navigation is required.</p>
+            <h4>Pre-authorisation support (where applicable)</h4>
+            <p>For VA and DVA cases, we assist with the pre-authorisation process and correspondence with your funding body. For self-funded cases, we move directly to clinical assessment and bed allocation.</p>
+          </div>
+        </div>
+        <div class="journey-step">
+          <div class="journey-n">4</div>
+          <div>
+            <h4>Travel and arrival</h4>
+            <p>We assist with flights, transfers, and arrival. You are met at Colombo airport and accompanied to the facility. The first days of your programme include a comprehensive clinical assessment and individualised treatment planning.</p>
           </div>
         </div>
       </div>
       <div>
         <div class="info-box">
-          <h4>Busan to Sri Lanka: key facts</h4>
-          <div class="info-row"><span>Departure airport</span><span>Gimhae (PUS) or via Seoul ICN</span></div>
+          <h4>Sri Lanka: key facts for veterans</h4>
+          <div class="info-row"><span>Cost per month</span><span>from $9,900 USD</span></div>
+          <div class="info-row"><span>Minimum programme</span><span>28 days</span></div>
+          <div class="info-row"><span>Recommended (PTSD + addiction)</span><span>60 to 90 days</span></div>
+          <div class="info-row"><span>Typical admission time</span><span>5 to 10 days</span></div>
+          <div class="info-row"><span>PTSD treatment</span><span>EMDR, PE, trauma-focused CBT</span></div>
+          <div class="info-row"><span>Detox available</span><span>Yes, medically supervised</span></div>
+          <div class="info-row"><span>Dual diagnosis</span><span>Yes, integrated treatment</span></div>
           <div class="info-row"><span>Arrival airport</span><span>Colombo (CMB)</span></div>
-          <div class="info-row"><span>Journey time</span><span>~10–12 hours (via hub)</span></div>
-          <div class="info-row"><span>Common connections</span><span>Singapore, Bangkok, Kuala Lumpur</span></div>
-          <div class="info-row"><span>Airlines</span><span>Singapore Airlines, Thai Airways, Malaysia Airlines</span></div>
-          <div class="info-row"><span>Time difference</span><span>Sri Lanka is 3.5 hours behind Korea (KST)</span></div>
-          <div class="info-row"><span>Local currency</span><span>Sri Lankan Rupee (LKR)</span></div>
-          <div class="info-row"><span>Your currency</span><span>Korean Won (KRW)</span></div>
-          <div class="info-row"><span>Typical 28-day cost</span><span>from $9,900 USD per month</span></div>
+          <div class="info-row"><span>Airport transfer</span><span>Arranged by the clinic</span></div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="alt">
+<!-- FAQ -->
+<section>
   <div class="inner">
-    <div class="label">Common questions from Busan clients</div>
-    <h2 class="sec-title">Questions we hear from Busan</h2>
+    <div class="label">Common questions</div>
+    <h2 class="sec-title">Questions from veterans and their families</h2>
     <div class="faq-list">
       <div class="faq-item">
-        <div class="faq-q">Is the clinical standard in Sri Lanka comparable to international private rehab?</div>
-        <div class="faq-a">Yes. Clinical teams are internationally trained in CBT, motivational interviewing, 12-step facilitation, and trauma-informed care. Many clinicians have trained or worked in the UK, Australia, or the US. Clinical quality is comparable to leading Western private facilities at a fraction of the cost.</div>
+        <div class="faq-q">Will a diagnosis from a Sri Lankan clinic affect my VA or DVA rating?</div>
+        <div class="faq-a">No. A diagnosis made during private overseas treatment does not automatically affect your VA disability rating or DVA entitlements. Records from private treatment are not shared with government agencies without your explicit written consent. We recommend speaking to a veterans service officer or legal advisor in your country if you have specific concerns about ratings before commencing treatment.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Will anyone in Korea find out I am receiving treatment?</div>
-        <div class="faq-a">No. Treatment is entirely confidential and records are never shared without your explicit written consent. Many Busan clients arrange extended medical or personal leave without disclosing the nature of their absence. Our advisors can assist you in planning this discreetly.</div>
+        <div class="faq-q">Do I need to go through my VA or DVA to access treatment?</div>
+        <div class="faq-a">No. Many veterans choose to self-fund treatment privately, particularly where speed of admission is important or where they have concerns about how a formal VA or DVA claim might affect other entitlements. Self-funded treatment can often be arranged within 5 to 10 days. We can advise on both routes — funded and self-funded — so you can make the right decision for your situation.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">How does the cost compare to treatment in the UK or USA?</div>
-        <div class="faq-a">UK private rehabilitation costs £8,000–£20,000 per month. US facilities typically charge $30,000–$60,000 per month. Sri Lanka is priced from $9,900 USD per month — the same clinical quality at a fraction of the cost.</div>
+        <div class="faq-q">Is the clinical team experienced with military trauma specifically?</div>
+        <div class="faq-a">Yes. The programmes we refer veterans to include clinicians experienced in treating operational trauma, moral injury, and the specific patterns of PTSD that arise from military service rather than civilian traumatic events. This is not a standard residential addiction programme with a PTSD module bolted on — it is integrated trauma and addiction treatment delivered by a specialist team.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Is treatment available in English?</div>
-        <div class="faq-a">Yes. All treatment is delivered in English using internationally recognised clinical frameworks. The teams are experienced working with international clients from across Asia, including Korea.</div>
+        <div class="faq-q">My family member is a veteran and I am trying to help them access treatment. Where do I start?</div>
+        <div class="faq-a">Start by calling or messaging us directly. We work with families regularly and can advise on how to approach the conversation with your family member, what funding may be available, and what the admission process involves. In cases where a veteran is not yet ready to engage, we can provide guidance on how families can support that process without applying pressure in ways that make engagement less likely.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">How quickly can I be admitted?</div>
-        <div class="faq-a">Most Busan clients can be admitted within 5 to 10 days of initial enquiry, subject to clinical assessment and bed availability. There are no waiting lists.</div>
+        <div class="faq-q">Can treatment in Sri Lanka be used as evidence in a VA or DVA claim?</div>
+        <div class="faq-a">Treatment records from private overseas providers can, with your consent, be submitted as supporting evidence in VA or DVA claims or reviews. Many veterans find that a formal clinical diagnosis and treatment record from a reputable international provider strengthens a claim that has previously been denied or rated lower than expected. We can provide documentation to assist with this on request.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">What medical facilities are available in Sri Lanka?</div>
-        <div class="faq-a">Sri Lanka has quality private hospitals in Colombo — Lanka Hospitals and Asiri Hospital both have 24-hour emergency departments. All clinical facilities maintain medical transfer protocols. Comprehensive travel and medical insurance is recommended before departure.</div>
+        <div class="faq-q">How do I know if I need 28 days or longer?</div>
+        <div class="faq-a">For veterans presenting with both PTSD and a substance use disorder — which is the most common presentation we see — 28 days is rarely sufficient. Clinical evidence strongly supports a minimum of 60 days for co-occurring conditions, and 90 days where PTSD is severe or substance use is long-standing. We will recommend a programme length based on your clinical presentation, not a minimum that fits within a funding cap.</div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- CTA -->
 <div class="cta-band">
-  <h2>Ready to take the first step?</h2>
-  <p>Speak with one of our advisors for free, confidential guidance.<br>No pressure. No obligation. We respond within a few hours.</p>
-  <div style="display:flex;justify-content:center;margin-top:8px;">
-    <a href="https://wa.me/94763247711" class="whatsapp-cta-band" target="_blank" rel="noopener">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-      WhatsApp Us Now
-    </a>
+  <h2>Speak with us in confidence</h2>
+  <p>Free advice for veterans and their families.<br>No pressure. No obligation. We respond within a few hours.</p>
+  <div class="cta-form-card">
+    <h3>Get free, confidential advice</h3>
+    <form action="https://formspree.io/f/xaqzqnvj" method="POST">
+      <input type="hidden" name="source" value="veterans-hub-cta">
+      <input type="hidden" name="_next" value="false">
+      <div class="form-row">
+        <div class="fg"><label>Name</label><input type="text" name="name" placeholder="First name"></div>
+        <div class="fg"><label>Phone</label><input type="tel" name="phone" placeholder="Your number"></div>
+      </div>
+      <div class="fg"><label>Email</label><input type="email" name="email" placeholder="email@example.com"></div>
+      <div class="fg">
+        <label>Country of service</label>
+        <select name="country">
+          <option value="">Select one</option>
+          <option>United States</option>
+          <option>Australia</option>
+          <option>United Kingdom</option>
+          <option>New Zealand</option>
+          <option>Canada</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <button class="form-submit" type="submit">Send my enquiry</button>
+      <p class="form-note" style="margin-top:10px;">We respond within a few hours.</p>
+    </form>
+    <div class="cta-or"><span>or reach us directly on WhatsApp</span></div>
+    <a href="https://wa.me/94763247711" class="whatsapp-cta" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> WhatsApp Us</a>
   </div>
-  <p class="sub-note">Free advice. No pressure. 100% confidential.</p>
 </div>
 
 <footer>
@@ -632,14 +758,14 @@ footer { background: #0c1e16; padding: 56px 5% 32px; }
       <a href="alcohol-rehab-sri-lanka.html">Alcohol rehab</a>
       <a href="drug-rehab-sri-lanka.html">Drug rehab</a>
       <a href="dual-diagnosis-sri-lanka.html">Dual diagnosis</a>
-      <a href="depression-treatment-sri-lanka.html">Depression</a>
+      <a href="trauma-treatment-sri-lanka.html">Trauma</a>
     </div>
     <div class="footer-col">
-      <h5>From your city</h5>
-      <a href="rehab-sri-lanka-from-london.html">From London</a>
-      <a href="rehab-sri-lanka-from-dubai.html">From Dubai</a>
-      <a href="rehab-sri-lanka-from-sydney.html">From Sydney</a>
-      <a href="rehab-sri-lanka-from-new-york.html">From New York</a>
+      <h5>Veterans</h5>
+      <a href="veterans-us-va-rehab-sri-lanka.html">US Veterans</a>
+      <a href="veterans-australia-dva-rehab-sri-lanka.html">Australian Veterans</a>
+      <a href="veterans-uk-rehab-sri-lanka.html">UK Veterans</a>
+      <a href="veterans-new-zealand-rehab-sri-lanka.html">NZ Veterans</a>
     </div>
     <div class="footer-col">
       <h5>Information</h5>
@@ -666,12 +792,11 @@ footer { background: #0c1e16; padding: 56px 5% 32px; }
     </div>
   </div>
 </footer>
-
 <script>
-document.querySelectorAll('.faq-item').forEach(function(item) {
-  item.addEventListener('click', function() {
-    var isOpen = item.classList.contains('open');
-    document.querySelectorAll('.faq-item').forEach(function(i) { i.classList.remove('open'); });
+document.querySelectorAll('.faq-item').forEach(item => {
+  item.addEventListener('click', () => {
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
     if (!isOpen) item.classList.add('open');
   });
 });
@@ -681,11 +806,8 @@ document.querySelectorAll('.faq-item').forEach(function(item) {
   var btn = document.getElementById('navHamburger');
   var menu = document.getElementById('mobileMenu');
   if(!btn || !menu) return;
-  btn.addEventListener('click', function(){
-    btn.classList.toggle('open');
-    menu.classList.toggle('open');
-  });
-  menu.querySelectorAll('.mob-group-header').forEach(function(header) {
+  btn.addEventListener('click', function(){ btn.classList.toggle('open'); menu.classList.toggle('open'); });
+  menu.querySelectorAll('.mob-group-header').forEach(function(header){
     header.addEventListener('click', function(){
       var body = header.nextElementSibling;
       var isOpen = body.classList.contains('open');
@@ -694,19 +816,12 @@ document.querySelectorAll('.faq-item').forEach(function(item) {
       if(!isOpen){ header.setAttribute('aria-expanded','true'); body.classList.add('open'); }
     });
   });
-  menu.querySelectorAll('.mob-flat-link, .mobile-cta').forEach(function(link){
-    link.addEventListener('click', function(){ btn.classList.remove('open'); menu.classList.remove('open'); });
-  });
+  menu.querySelectorAll('.mob-flat-link, .mobile-cta').forEach(function(link){ link.addEventListener('click', function(){ btn.classList.remove('open'); menu.classList.remove('open'); }); });
   var cityLi = document.querySelector('.city-dropdown-parent');
   var cityDropdown = cityLi ? cityLi.querySelector('.nav-dropdown-wide') : null;
   var navEl = document.querySelector('nav');
   if(cityLi && cityDropdown && navEl){
-    function positionCityDropdown(){
-      var navRect = navEl.getBoundingClientRect();
-      var liRect = cityLi.getBoundingClientRect();
-      cityDropdown.style.left = (navRect.left - liRect.left) + 'px';
-      cityDropdown.style.width = navRect.width + 'px';
-    }
+    function positionCityDropdown(){ var navRect = navEl.getBoundingClientRect(); var liRect = cityLi.getBoundingClientRect(); cityDropdown.style.left=(navRect.left-liRect.left)+'px'; cityDropdown.style.width=navRect.width+'px'; }
     cityLi.addEventListener('mouseenter', function(){ positionCityDropdown(); cityLi.classList.add('dropdown-open'); });
     cityLi.addEventListener('mouseleave', function(){ cityLi.classList.remove('dropdown-open'); });
     cityDropdown.addEventListener('mouseenter', function(){ cityLi.classList.add('dropdown-open'); });
