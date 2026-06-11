@@ -444,6 +444,11 @@ footer {
 
   <button class="nav-hamburger" id="navHamburger" aria-label="Menu"><span></span><span></span><span></span></button>
 </nav>
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mob-group"><button class="mob-group-header" aria-expanded="false">Treatment <span class="mob-arrow"></span></button><div class="mob-group-body"><a href="alcohol-rehab-sri-lanka.html">Alcohol Rehab</a><a href="drug-rehab-sri-lanka.html">Drug Rehab</a><a href="dual-diagnosis-sri-lanka.html">Dual Diagnosis</a><a href="trauma-treatment-sri-lanka.html">Trauma</a></div></div>
+  <div class="mob-group"><button class="mob-group-header" aria-expanded="false">Blog <span class="mob-arrow"></span></button><div class="mob-group-body"><a href="blog-condition-addiction.html">Condition &amp; Addiction</a><a href="blog-sri-lanka-destination.html">Sri Lanka Destination</a><a href="blog-family-intervention.html">Family &amp; Intervention</a><a href="blog-veterans.html">Veterans</a><a href="blog-recovery-aftercare.html">Recovery &amp; Aftercare</a></div></div>
+  <a href="contact.html" class="mobile-cta">Get Free Advice</a>
+</div>
 
 <!-- HERO -->
 <div class="hero">
@@ -593,5 +598,13 @@ async function handleSubmit(e) {
 }
 </script>
 <script src="/schema.js" defer></script>
+<script>
+(function(){
+  var btn=document.getElementById('navHamburger'),menu=document.getElementById('mobileMenu');
+  if(!btn||!menu)return;
+  btn.addEventListener('click',function(){btn.classList.toggle('open');menu.classList.toggle('open');});
+  menu.querySelectorAll('.mob-group-header').forEach(function(h){h.addEventListener('click',function(){var b=h.nextElementSibling,o=b.classList.contains('open');menu.querySelectorAll('.mob-group-body').forEach(function(x){x.classList.remove('open');});menu.querySelectorAll('.mob-group-header').forEach(function(x){x.setAttribute('aria-expanded','false');});if(!o){h.setAttribute('aria-expanded','true');b.classList.add('open');}});});
+})();
+</script>
 </body>
 </html>
