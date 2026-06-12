@@ -485,7 +485,7 @@ footer {
       </div>
 
       <div id="lead-form">
-        <form id="guide-form" action="https://formspree.io/f/xaqzqnvj" method="POST" onsubmit="handleSubmit(event)">
+        <form id="guide-form" action="https://rsl-form-handler.jolly-heart-bd0f.workers.dev" method="POST" onsubmit="handleSubmit(event)">
         <input type="hidden" name="_source" value="Guide Download">
         <input type="hidden" name="_next" value="false">
         <div class="form-row">
@@ -582,7 +582,7 @@ async function handleSubmit(e) {
   const form = document.getElementById('guide-form');
   const data = new FormData(form);
   try {
-    await fetch('https://formspree.io/f/xaqzqnvj', {
+    await fetch('https://rsl-form-handler.jolly-heart-bd0f.workers.dev', {
       method: 'POST',
       body: data,
       headers: { 'Accept': 'application/json' }
