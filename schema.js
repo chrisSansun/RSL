@@ -318,4 +318,28 @@
     });
   }
 
+  // -- Article / BlogPosting schema (individual blog article pages) -----------
+  var articleBody = document.querySelector('.article-body');
+  if (articleBody && !slug.startsWith('blog')) {
+    var articleCat = document.querySelector('.article-cat');
+    var catName = articleCat ? articleCat.textContent.trim() : 'Addiction and Rehab';
+    inject({
+      '@context': 'https://schema.org',
+      '@type': 'BlogPosting',
+      '@id': pageUrl() + '#article',
+      url: pageUrl(),
+      headline: pageTitle(),
+      description: pageDesc(),
+      articleSection: catName,
+      inLanguage: 'en',
+      publisher: { '@id': DOMAIN + '/#organization' },
+      author: {
+        '@type': 'Organization',
+        name: ORG_NAME,
+        url: DOMAIN
+      },
+      isPartOf: { '@id': DOMAIN + '/#website' }
+    });
+  }
+
 })();
