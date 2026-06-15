@@ -323,7 +323,26 @@
   if (articleBody && !slug.startsWith('blog')) {
     var articleCat = document.querySelector('.article-cat');
     var catName = articleCat ? articleCat.textContent.trim() : 'Addiction and Rehab';
-    inject({
+
+    var authorBox = document.querySelector('.author-box');
+    var authorObj;
+    if (authorBox) {
+      var authorNameEl = authorBox.querySelector('.author-name');
+      var authorLinkEl = authorBox.querySelector('.author-links a');
+      authorObj = {
+        '@type': 'Person',
+        name: authorNameEl ? authorNameEl.textContent.trim() : ORG_NAME,
+        url: authorLinkEl ? authorLinkEl.getAttribute('href') : DOMAIN
+      };
+    } else {
+      authorObj = { '@type': 'Organization', name: ORG_NAME, url: DOMAIN };
+    }
+
+    var dpMeta = document.querySelector('meta[property="article:published_time"]');
+    var dmMeta = document.querySelector('meta[property="article:modified_time"]');
+    var wordCount = articleBody.innerText ? articleBody.innerText.split(/\s+/).filter(Boolean).length : 0;
+
+    var articleSchema = {
       '@context': 'https://schema.org',
       '@type': 'BlogPosting',
       '@id': pageUrl() + '#article',
@@ -333,13 +352,13 @@
       articleSection: catName,
       inLanguage: 'en',
       publisher: { '@id': DOMAIN + '/#organization' },
-      author: {
-        '@type': 'Organization',
-        name: ORG_NAME,
-        url: DOMAIN
-      },
+      author: authorObj,
       isPartOf: { '@id': DOMAIN + '/#website' }
-    });
+    };
+    if (dpMeta) articleSchema.datePublished = dpMeta.getAttribute('content');
+    if (dmMeta) articleSchema.dateModified = dmMeta.getAttribute('content');
+    if (wordCount > 0) articleSchema.wordCount = wordCount;
+    inject(articleSchema);
   }
 
 })();
