@@ -60,6 +60,12 @@ body { font-family: 'Outfit', sans-serif; color: var(--text-dark); background: v
 .sidebar-links a { display: block; font-size: 13.5px; font-weight: 400; color: var(--text-mid); text-decoration: none; padding: 7px 0; border-bottom: 1px solid var(--border); transition: color 0.15s; }
 .sidebar-links a:last-child { border-bottom: none; }
 .sidebar-links a:hover { color: var(--emerald); }
+.faq-item { border-bottom: 1px solid var(--border); }
+.faq-q { width: 100%; background: none; border: none; text-align: left; font-family: 'Outfit', sans-serif; font-size: 16px; font-weight: 500; color: var(--text-dark); padding: 18px 0; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+.faq-q span { font-size: 20px; font-weight: 300; color: var(--emerald); flex-shrink: 0; transition: transform 0.2s; }
+.faq-q[aria-expanded="true"] span { transform: rotate(45deg); }
+.faq-a { display: none; padding-bottom: 18px; }
+.faq-a.open { display: block; }
 .share-bar { display: flex; align-items: center; gap: 8px; margin: 48px 0 32px; flex-wrap: nowrap; overflow-x: auto; }
 .share-label { font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted); white-space: nowrap; margin-right: 4px; }
 .share-btn { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 500; padding: 7px 12px; border-radius: 8px; text-decoration: none; background: #fff; color: var(--text-mid); border: 1px solid var(--border); transition: border-color 0.18s, color 0.18s; white-space: nowrap; }
@@ -175,6 +181,36 @@ footer { background: #0c1e16; padding: 56px 5% 32px; }
     <p><a href="what-is-medical-detox.html">Medical detox</a> is almost always required for people who have been drinking at dependency levels. The risk of <a href="what-happens-body-alcohol-withdrawal.html">severe withdrawal</a> - including seizures and delirium tremens - is not diminished by functioning. It is assessed by the quantity, duration, and pattern of drinking, not by professional status. Medically supervised detoxification, in a residential setting, provides the safe and monitored withdrawal that this group requires.</p>
     <p>Many high-functioning alcoholics find that the experience of residential treatment is significantly different from what they feared. The loss of control they anticipated does not materialise. What appears instead - often for the first time in years - is a form of clarity that their drinking had been preventing.</p>
 
+    <h2>Frequently asked questions</h2>
+
+    <div class="faq-item">
+      <button class="faq-q">Can someone be an alcoholic if they still go to work and seem fine? <span>+</span></button>
+      <div class="faq-a">
+        <p>Yes. High-functioning alcoholism is a recognised pattern within alcohol use disorder where someone drinks at dependency levels while maintaining outward stability — holding a job, maintaining relationships, and appearing well. The absence of obvious crisis does not mean the absence of a problem. The physiological dependency, and the damage it causes, is the same regardless of how someone presents externally.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q">What are the early signs of high-functioning alcoholism? <span>+</span></button>
+      <div class="faq-a">
+        <p>Key early signs include drinking at a fixed time every day, anxiety or irritability when alcohol is unavailable, consistently minimising how much you drink to others, planning social events around drinking, and using alcohol to manage stress, anxiety or sleep. The absence of consequences — no job loss, no relationship breakdown — is not evidence there is no problem. It means the consequences have not yet materialised.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q">Is high-functioning alcoholism harder to treat than other forms of alcohol dependency? <span>+</span></button>
+      <div class="faq-a">
+        <p>It is not harder to treat clinically, but it is harder to get into treatment. The main barrier is the "not that bad" comparison — because external consequences have not yet appeared, many high-functioning alcoholics do not identify with the need for help. Once in treatment, this group often responds well, particularly in programmes that engage their intelligence and self-awareness rather than treating those traits as obstacles.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q">Does high-functioning alcoholism require medical detox? <span>+</span></button>
+      <div class="faq-a">
+        <p>In most cases, yes. If someone has been drinking at dependency levels for an extended period, stopping suddenly carries a genuine medical risk — including seizures and delirium tremens. This risk is assessed by the quantity, duration, and pattern of drinking, not by how functional someone appears. Medically supervised detox in a residential setting is the safest approach and is almost always recommended for this group.</p>
+      </div>
+    </div>
+
     <div class="share-bar">
       <span class="share-label">Share this article</span>
       <a href="https://wa.me/?text=https://www.rehabsrilanka.com/high-functioning-alcoholism.html" target="_blank" rel="noopener" class="share-btn share-wa">
@@ -254,6 +290,16 @@ footer { background: #0c1e16; padding: 56px 5% 32px; }
   var cityLi=document.querySelector('.city-dropdown-parent'),cityDd=cityLi?cityLi.querySelector('.nav-dropdown-wide'):null,navEl=document.querySelector('nav');
   if(cityLi&&cityDd&&navEl){function pos(){var nr=navEl.getBoundingClientRect(),lr=cityLi.getBoundingClientRect();cityDd.style.left=(nr.left-lr.left)+'px';cityDd.style.width=nr.width+'px';}cityLi.addEventListener('mouseenter',function(){pos();cityLi.classList.add('dropdown-open');});cityLi.addEventListener('mouseleave',function(){cityLi.classList.remove('dropdown-open');});cityDd.addEventListener('mouseenter',function(){cityLi.classList.add('dropdown-open');});cityDd.addEventListener('mouseleave',function(){cityLi.classList.remove('dropdown-open');});}
 })();
+</script>
+<script>
+document.querySelectorAll('.faq-q').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var answer = btn.nextElementSibling;
+    var isOpen = answer.classList.contains('open');
+    answer.classList.toggle('open', !isOpen);
+    btn.setAttribute('aria-expanded', !isOpen);
+  });
+});
 </script>
 <script src="/schema.js" defer></script>
 </body>
