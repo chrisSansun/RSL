@@ -98,6 +98,17 @@ footer { background: #0c1e16; padding: 56px 5% 32px; }
 @media (max-width: 900px) { .article-wrap { grid-template-columns: 1fr; gap: 48px; } .article-sidebar { position: static; } .article-hero h1 { font-size: 38px; } .footer-grid { grid-template-columns: 1fr 1fr; } .article-cta { flex-direction: column; text-align: center; } }
 @media (max-width: 600px) { .article-hero h1 { font-size: 32px; } .article-hero .standfirst { font-size: 16px; } .schedule-item { grid-template-columns: 80px 1fr; } .footer-grid { grid-template-columns: 1fr; gap: 28px; } .share-bar { flex-wrap: wrap; } .share-label { width: 100%; margin-bottom: 4px; } }
 body { overflow-x: hidden; }
+.author-box { display: flex; align-items: flex-start; gap: 24px; background: var(--emerald-pale); border: 1px solid var(--border); border-radius: 14px; padding: 28px 32px; margin-top: 40px; }
+.author-photo { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+.author-meta { flex: 1; }
+.author-label { font-size: 10px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 4px; }
+.author-name { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 600; color: var(--text-dark); line-height: 1.2; margin-bottom: 2px; }
+.author-creds { font-size: 12px; color: var(--text-muted); margin-bottom: 10px; }
+.author-bio { font-size: 14px; line-height: 1.7; color: var(--text-mid); margin-bottom: 12px; }
+.author-links { display: flex; gap: 12px; flex-wrap: wrap; }
+.author-links a { font-size: 12px; font-weight: 500; color: var(--emerald-mid); text-decoration: none; border-bottom: 1px solid var(--emerald-mid); }
+.author-links a:hover { color: var(--emerald); border-color: var(--emerald); }
+@media (max-width: 600px) { .author-box { flex-direction: column; align-items: center; text-align: center; padding: 24px 20px; } .author-links { justify-content: center; } }
 </style>
 </head>
 <body>
@@ -262,6 +273,20 @@ body { overflow-x: hidden; }
         <p>Free confidential advice from people who understand this pattern. No pressure, no judgement.</p>
       </div>
       <a href="contact.html">Get free advice</a>
+    </div>
+
+    <div class="author-box">
+      <img src="images/chris-murray.jpeg" alt="Christopher Murray - cognitive hypnotherapist and co-founder of Sansun Group" class="author-photo" loading="lazy">
+      <div class="author-meta">
+        <p class="author-label">About the author</p>
+        <p class="author-name">Christopher Murray</p>
+        <p class="author-creds">Dip.C.Hyp &middot; HPD &middot; NLP &middot; MNCH</p>
+        <p class="author-bio">Christopher Murray is a cognitive hypnotherapist, NLP practitioner, and author of The Confidence Reset - a neuroscience-grounded framework for rebuilding confidence at the level of the nervous system. Co-founder of the Sansun Group, he works with high-functioning individuals internationally and advises families and clients navigating addiction treatment and rehabilitation across Asia. His work sits at the intersection of cognitive hypnotherapy, somatic psychology, and practical neuroscience.</p>
+        <div class="author-links">
+          <a href="https://www.chrismurrayhypnosis.com" target="_blank" rel="noopener noreferrer">chrismurrayhypnosis.com</a>
+          <a href="https://www.confidenceresetnow.com" target="_blank" rel="noopener noreferrer">confidenceresetnow.com</a>
+        </div>
+      </div>
     </div>
 
   </article>
