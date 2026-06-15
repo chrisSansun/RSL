@@ -60,9 +60,9 @@ body { font-family: 'Outfit', sans-serif; color: var(--text-dark); background: v
 .sidebar-links a { display: block; font-size: 13.5px; font-weight: 400; color: var(--text-mid); text-decoration: none; padding: 7px 0; border-bottom: 1px solid var(--border); transition: color 0.15s; }
 .sidebar-links a:last-child { border-bottom: none; }
 .sidebar-links a:hover { color: var(--emerald); }
-.share-bar { display: flex; align-items: center; gap: 10px; margin: 48px 0 32px; flex-wrap: wrap; }
-.share-label { font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted); margin-right: 6px; }
-.share-btn { display: inline-flex; align-items: center; gap: 7px; font-size: 13px; font-weight: 500; padding: 9px 16px; border-radius: 8px; text-decoration: none; background: #fff; color: var(--text-mid); border: 1px solid var(--border); transition: border-color 0.18s, color 0.18s; }
+.share-bar { display: flex; align-items: center; gap: 8px; margin: 48px 0 32px; flex-wrap: nowrap; overflow-x: auto; }
+.share-label { font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted); white-space: nowrap; margin-right: 4px; }
+.share-btn { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 500; padding: 7px 12px; border-radius: 8px; text-decoration: none; background: #fff; color: var(--text-mid); border: 1px solid var(--border); transition: border-color 0.18s, color 0.18s; white-space: nowrap; }
 .share-btn:hover { border-color: var(--emerald-mid); color: var(--emerald-mid); }
 .share-copy { cursor: pointer; font-family: 'Outfit', sans-serif; }
 .article-cta { background: var(--emerald); border-radius: 14px; padding: 40px 36px; margin-top: 48px; display: flex; align-items: center; justify-content: space-between; gap: 32px; }
