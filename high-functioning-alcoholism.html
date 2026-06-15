@@ -68,6 +68,7 @@ body { font-family: 'Outfit', sans-serif; color: var(--text-dark); background: v
 .share-fb { background: #1877F2; color: #fff; }
 .share-li { background: #0A66C2; color: #fff; }
 .share-x { background: #000; color: #fff; }
+.share-copy { background: var(--off-white); color: var(--text-mid); border: 1px solid var(--border); cursor: pointer; font-family: 'Outfit', sans-serif; }
 .article-cta { background: var(--emerald); border-radius: 14px; padding: 40px 36px; margin-top: 48px; display: flex; align-items: center; justify-content: space-between; gap: 32px; }
 .article-cta h3 { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 500; color: var(--white); margin-bottom: 6px; }
 .article-cta p { font-size: 14px; font-weight: 300; color: rgba(255,255,255,0.7); margin: 0; }
@@ -196,6 +197,10 @@ footer { background: #0c1e16; padding: 56px 5% 32px; }
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
         X
       </a>
+      <button onclick="navigator.clipboard.writeText('https://www.rehabsrilanka.com/high-functioning-alcoholism.html').then(function(){var b=this;b.textContent='Copied!';setTimeout(function(){b.innerHTML='<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'16\' height=\'16\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-linejoin=\'round\'><rect x=\'9\' y=\'9\' width=\'13\' height=\'13\' rx=\'2\' ry=\'2\'></rect><path d=\'M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1\'></path></svg> Copy link';},2000)}.bind(this))" class="share-btn share-copy">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+        Copy link
+      </button>
     </div>
 
     <div class="article-cta">
