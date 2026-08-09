@@ -451,6 +451,10 @@ footer { background: #0c1e16; padding: 56px 5% 32px; }
   </div>
     <div class="hero-form-card a3">
     <form action="https://rsl-form-handler.jolly-heart-bd0f.workers.dev" method="POST">
+    <div style="position:absolute;left:-9999px;top:-9999px;" aria-hidden="true">
+      <label for="website">Leave this field empty</label>
+      <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+    </div>
       <input type="hidden" name="source" value="edinburgh-page">
       <input type="hidden" name="_next" value="false">
       <h3>Get free advice today</h3>
@@ -470,7 +474,9 @@ footer { background: #0c1e16; padding: 56px 5% 32px; }
           <option>Just researching options</option>
         </select>
       </div>
-      <button class="form-submit" type="submit">Send my enquiry</button>
+      
+    <div class="cf-turnstile" data-sitekey="0x4AAAAAAEK5L6YVEZOQavQD" style="margin-bottom:14px;"></div>
+    <button class="form-submit" type="submit">Send my enquiry</button>
       <p class="form-note">Free advice. No pressure. 100% confidential.</p>
     </form>
   </div>
@@ -634,6 +640,10 @@ footer { background: #0c1e16; padding: 56px 5% 32px; }
   <div class="cta-form-card">
     <h3>Get free, confidential advice</h3>
     <form action="https://rsl-form-handler.jolly-heart-bd0f.workers.dev" method="POST">
+    <div style="position:absolute;left:-9999px;top:-9999px;" aria-hidden="true">
+      <label for="website">Leave this field empty</label>
+      <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+    </div>
       <input type="hidden" name="source" value="edinburgh-page">
       <input type="hidden" name="_next" value="false">
       <div class="form-row">
@@ -781,5 +791,7 @@ document.querySelectorAll('.faq-item').forEach(item => {
 })();
 </script>
 <script src="/schema.js" defer></script>
+
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </body>
 </html>

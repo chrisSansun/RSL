@@ -97,12 +97,18 @@ footer{background:#0c1e16;padding:56px 5% 32px}.footer-grid{display:grid;grid-te
   </div>
   <div class="hero-form-card a3">
     <form action="https://rsl-form-handler.jolly-heart-bd0f.workers.dev" method="POST">
+    <div style="position:absolute;left:-9999px;top:-9999px;" aria-hidden="true">
+      <label for="website">Leave this field empty</label>
+      <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+    </div>
       <input type="hidden" name="source" value="kuala-lumpur-page"><input type="hidden" name="_next" value="false">
       <h3>Get free advice today</h3><p class="hf-sub">Speak with an advisor in confidence. No obligation, no pressure.</p>
       <div class="form-row"><div class="fg"><label>Name</label><input type="text" name="name" placeholder="First name"></div><div class="fg"><label>Phone</label><input type="tel" name="phone" placeholder="+60"></div></div>
       <div class="fg"><label>Email</label><input type="email" name="email" placeholder="email@example.com"></div>
       <div class="fg"><label>I am</label><select name="situation"><option value="">Select one</option><option>Seeking treatment for myself</option><option>Helping a family member</option><option>A GP or referring professional</option><option>Just researching options</option></select></div>
-      <button class="form-submit" type="submit">Send my enquiry</button>
+      
+    <div class="cf-turnstile" data-sitekey="0x4AAAAAAEK5L6YVEZOQavQD" style="margin-bottom:14px;"></div>
+    <button class="form-submit" type="submit">Send my enquiry</button>
       <p class="form-note">Free advice. No pressure. 100% confidential.</p>
     </form>
   </div>
@@ -132,6 +138,10 @@ footer{background:#0c1e16;padding:56px 5% 32px}.footer-grid{display:grid;grid-te
   <div class="cta-form-card">
     <h3>Get free, confidential advice</h3>
     <form action="https://rsl-form-handler.jolly-heart-bd0f.workers.dev" method="POST">
+    <div style="position:absolute;left:-9999px;top:-9999px;" aria-hidden="true">
+      <label for="website">Leave this field empty</label>
+      <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+    </div>
       <input type="hidden" name="source" value="kuala-lumpur-page"><input type="hidden" name="_next" value="false">
       <div class="form-row"><div class="fg"><label>Name</label><input type="text" name="name" placeholder="First name"></div><div class="fg"><label>Phone</label><input type="tel" name="phone" placeholder="+60"></div></div>
       <div class="fg"><label>Email</label><input type="email" name="email" placeholder="email@example.com"></div>
@@ -170,4 +180,6 @@ document.querySelectorAll('.faq-item').forEach(function(i){i.addEventListener('c
 (function(){var btn=document.getElementById('navHamburger'),menu=document.getElementById('mobileMenu');if(!btn||!menu)return;btn.addEventListener('click',function(){btn.classList.toggle('open');menu.classList.toggle('open')});menu.querySelectorAll('.mob-group-header').forEach(function(h){h.addEventListener('click',function(){var b=h.nextElementSibling,o=b.classList.contains('open');menu.querySelectorAll('.mob-group-body').forEach(function(x){x.classList.remove('open')});menu.querySelectorAll('.mob-group-header').forEach(function(x){x.setAttribute('aria-expanded','false')});if(!o){h.setAttribute('aria-expanded','true');b.classList.add('open')}})});menu.querySelectorAll('.mob-flat-link,.mobile-cta').forEach(function(l){l.addEventListener('click',function(){btn.classList.remove('open');menu.classList.remove('open')})});var cl=document.querySelector('.city-dropdown-parent'),cd=cl?cl.querySelector('.nav-dropdown-wide'):null,nav=document.querySelector('nav');if(cl&&cd&&nav){function pos(){var nr=nav.getBoundingClientRect(),lr=cl.getBoundingClientRect();cd.style.left=(nr.left-lr.left)+'px';cd.style.width=nr.width+'px'}cl.addEventListener('mouseenter',function(){pos();cl.classList.add('dropdown-open')});cl.addEventListener('mouseleave',function(){cl.classList.remove('dropdown-open')});cd.addEventListener('mouseenter',function(){cl.classList.add('dropdown-open')});cd.addEventListener('mouseleave',function(){cl.classList.remove('dropdown-open')})}})();
 </script>
 <script src="/schema.js" defer></script>
+
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </body></html>

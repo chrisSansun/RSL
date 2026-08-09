@@ -607,5 +607,7 @@ async function handleSubmit(e) {
   menu.querySelectorAll('.mob-group-header').forEach(function(h){h.addEventListener('click',function(){var b=h.nextElementSibling,o=b.classList.contains('open');menu.querySelectorAll('.mob-group-body').forEach(function(x){x.classList.remove('open');});menu.querySelectorAll('.mob-group-header').forEach(function(x){x.setAttribute('aria-expanded','false');});if(!o){h.setAttribute('aria-expanded','true');b.classList.add('open');}});});
 })();
 </script>
+
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </body>
 </html>

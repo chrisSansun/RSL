@@ -1,0 +1,31 @@
+name = "rsl-form-handler"
+main = "contact.js"
+compatibility_date = "2026-06-12"
+preview_urls = true
+
+[observability]
+enabled = true
+
+[observability.logs]
+enabled = true
+
+[vars]
+ALLOWED_ORIGIN = "https://www.rehabsrilanka.com"
+REDIRECT_URL = "https://www.rehabsrilanka.com/contact?sent=1"
+
+# Secrets already set on the live worker (confirmed via `wrangler versions view` —
+# do not need to be recreated, `wrangler versions upload` keeps them):
+#   FIREBASE_PROJECT_ID, FIREBASE_CLIENT_EMAIL, FIREBASE_PRIVATE_KEY, RESEND_API_KEY
+#
+# New secret to add:
+#   wrangler secret put TURNSTILE_SECRET_KEY
+#     value: 0x4AAAAAAEK5L0ZDBIBdsx1wLXpzf1ugeQE   (RSL Contact Form widget, created 2026-08-09)
+
+# Native Cloudflare rate limiting: 5 submissions per IP per 60s.
+# Requires a Workers Paid plan (Rate Limiting API). If unavailable, remove
+# this block — the worker skips rate limiting gracefully if unbound.
+[[unsafe.bindings]]
+name = "RATE_LIMITER"
+type = "ratelimit"
+namespace_id = "1"
+simple = { limit = 5, period = 60 }
